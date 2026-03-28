@@ -1,19 +1,51 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <title>Hackers de la Respiración</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Pagina con Fondo</title>
     <style>
-        body { background: #1a1a1a; color: #00ff41; font-family: 'Courier New', monospace; text-align: center; padding: 50px; }
-        h1 { border-bottom: 2px solid #00ff41; display: inline-block; }
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .fondo {
+            /* Ruta de la imagen de fondo */
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+		url('images/fondo.PNG');
+
+            /* Hacer que la imagen cubra toda la pantalla */
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed; /* Mantiene la imagen fija al hacer scroll */
+        }
+
+        .contenido {
+            text-align: center;
+            color: white;
+            padding-top: 20%; /* Ajusta esto para mover el texto hacia abajo */
+        }
+a:link, a:visited { color: gold; text-decoration: underline; /* Puedes poner 'none' si no quieres subrayado */
+        }
+ a:hover {
+            color: yellow; /* Un pequeño brillo al pasar el ratón */
+        }
     </style>
 </head>
 <body>
-    <h1>SISTEMA OPERATIVO: ¡No es yoga! 1.0</h1>
-    <p>> Iniciando protocolo de inhalación...</p>
-    <p>> Optimizando sistema nervioso...</p>
-    <p>> Por David García-Pozuelo Ramos</p>
-    <p> Puedes leerme en castellano en <a href="https://amzn.eu/d/0izV7kTV">https://amzn.eu/d/0izV7kTV</a> <o:p></o:p></p>
-    <p> O en inglés en <a href="https://amzn.eu/d/0gQIrP8i">https://amzn.eu/d/0gQIrP8i</a> <o:p></o:p></p>
-    <p>Próximamente: La comunidad definitiva de Biohacking.</p>
+    <div class="fondo">
+        <div class="contenido">
+           <h1>SISTEMA OPERATIVO: ¡No es yoga! 1.0</h1>
+   		<p>> Iniciando protocolo de inhalación...</p>
+ 		<p>> Optimizando sistema nervioso...</p>
+   		<p> Puedes leerme en castellano en <a href="https://amzn.eu/d/0izV7kTV">https://amzn.eu/d/0izV7kTV</a> <o:p></o:p></p>
+    		<p> O en inglés en <a href="https://amzn.eu/d/0gQIrP8i">https://amzn.eu/d/0gQIrP8i</a> <o:p></o:p></p>
+    		<p>Próximamente: La comunidad definitiva de Biohacking.</p>
+        </div>
+    </div>
 </body>
 </html>

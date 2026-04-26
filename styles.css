@@ -99,12 +99,12 @@ body {
     padding: 96px 32px 80px;
     text-align: center;
 }
-.hero-inner { max-width: var(--max); margin: 0 auto; animation: fadeUp 0.7s ease both;background: rgba(255, 255, 255, 0.72);
+.hero-inner { max-width: var(--max); margin: 0 auto; animation: fadeUp 0.7s ease both;background: rgba(255, 255, 255, 0.52);
     backdrop-filter: blur(6px);
     border: 1px solid var(--border);
     border-radius: var(--radius);
     box-shadow: var(--shadow);
-    padding: 40px 36px; }
+    padding: 10px 9px; }
 
 .hero-eyebrow {
     font-size: 0.72rem;

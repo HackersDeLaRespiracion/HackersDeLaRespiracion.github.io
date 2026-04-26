@@ -323,7 +323,7 @@ body {
 
 .bg-home {
     background:
-        linear-gradient(rgba(247,244,238,0.60), rgba(247,244,238,0.68)),
+        linear-gradient(rgba(247,244,238,0.50), rgba(247,244,238,0.58)),
         url("Images/fondo.png");
    	background-attachment: fixed;
 }
@@ -332,7 +332,7 @@ body {
 
 .bg-ciencia {
     background:
-        linear-gradient(rgba(247,244,238,0.60), rgba(247,244,238,0.68)),
+        linear-gradient(rgba(247,244,238,0.50), rgba(247,244,238,0.58)),
         url("Images/fondo-ciencia.png");
    	background-attachment: fixed;
 }
@@ -341,7 +341,7 @@ body {
 
 .bg-experiencias {
     background:
-        linear-gradient(rgba(247,244,238,0.60), rgba(247,244,238,0.68)),
+        linear-gradient(rgba(247,244,238,0.50), rgba(247,244,238,0.58)),
         url("Images/fondo-experiencia.png");
    	background-attachment: fixed;
 }
@@ -350,7 +350,7 @@ body {
 
 .bg-nutricion {
     background:
-        linear-gradient(rgba(247,244,238,0.60), rgba(247,244,238,0.68)),
+        linear-gradient(rgba(247,244,238,0.50), rgba(247,244,238,0.58)),
         url("Images/fondo-nutricion.png");
    	background-attachment: fixed;
 }
@@ -359,7 +359,7 @@ body {
 
 .bg-legal {
     background:
-        linear-gradient(rgba(247,244,238,0.60), rgba(247,244,238,0.68)),
+        linear-gradient(rgba(247,244,238,0.50), rgba(247,244,238,0.58)),
         url("Images/fondo.png");
    	background-attachment: fixed;
 }

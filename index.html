@@ -5,88 +5,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hackers de la Respiración</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Rajdhani:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Nunito+Sans:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="scanlines"></div>
-    <div class="fondo">
- 
-        <nav class="navbar">
-            <div class="nav-logo">&gt;_ HdR</div>
+<div class="page">
+
+    <nav class="navbar">
+        <div class="navbar-inner">
+            <a href="index.html" class="nav-logo">Hackers de la Respiración</a>
             <ul class="nav-links">
-                <li><a href="index.html" class="active">[INICIO]</a></li>
-                <li><a href="ciencia.html">[CIENCIA]</a></li>
-                <li><a href="experiencias.html">[EXPERIENCIAS]</a></li>
-                <li><a href="suplementos.html">[NUTRICIÓN]</a></li>
+                <li><a href="index.html" class="active">Inicio</a></li>
+                <li><a href="ciencia.html">Ciencia</a></li>
+                <li><a href="experiencias.html">Experiencias</a></li>
+                <li><a href="suplementos.html">Nutrición</a></li>
             </ul>
-            <div class="nav-burger" onclick="toggleMenu()">☰</div>
-        </nav>
- 
-        <div class="contenido hero">
-            <div class="terminal-window">
-                <div class="terminal-bar">
-                    <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
-                    <span class="terminal-title">sistema_operativo_v1.0.sh</span>
-                </div>
-                <div class="terminal-body">
-                    <h1 class="glitch" data-text="SISTEMA OPERATIVO">SISTEMA OPERATIVO</h1>
-                    <h2 class="subtitle">¡No es yoga! <span class="version">v1.0</span></h2>
-                    <div class="log-lines">
-                        <p class="log"><span class="prompt">&gt;</span> Iniciando protocolo de inhalación<span class="cursor">_</span></p>
-                        <p class="log delay1"><span class="prompt">&gt;</span> Optimizando sistema nervioso<span class="cursor">_</span></p>
-                        <p class="log delay2"><span class="prompt">&gt;</span> Hackeando la biología desde dentro<span class="cursor">_</span></p>
-                        <p class="log delay3 status-ok"><span class="prompt">&gt;</span> [OK] Sistema listo.</p>
-                    </div>
-                    <div class="divider"></div>
-                    <div class="book-links">
-                        <p class="section-label">// DESCARGA EL LIBRO //</p>
-                        <a href="https://amzn.to/4cwTSJZ" class="btn-link" target="_blank">
-                            <span class="btn-icon">📖</span> Leer en castellano
-                        </a>
-                        <a href="https://amzn.to/4sUPJ8Z" class="btn-link" target="_blank">
-                            <span class="btn-icon">📖</span> Read in English
-                        </a>
-                    </div>
-                    <div class="divider"></div>
-                    <p class="coming-soon">&gt; Próximamente: La comunidad definitiva de Biohacking.</p>
-                </div>
+            <button class="nav-burger" onclick="toggleMenu()" aria-label="Menú">☰</button>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-inner">
+            <p class="hero-eyebrow">David García-Pozuelo Ramos</p>
+            <h1 class="hero-title">SISTEMA OPERATIVO</h1>
+            <p class="hero-subtitle">¡No es yoga! &nbsp;v1.0</p>
+            <div class="hero-divider"></div>
+            <p class="hero-desc">
+                Una guía práctica, respaldada por la neurociencia, para recuperar 
+                el superpoder más olvidado que tienes: tu respiración.
+            </p>
+            <div class="book-btns">
+                <a href="https://amzn.to/4cwTSJZ" class="btn-book" target="_blank">📖 Leer en castellano</a>
+                <a href="https://amzn.to/4sUPJ8Z" class="btn-book secondary" target="_blank">📖 Read in English</a>
             </div>
+            <p class="announce">Próximamente: La comunidad definitiva de Biohacking.</p>
         </div>
- 
-        <div class="nav-cards">
-            <a href="ciencia.html" class="card">
-                <div class="card-icon">🔬</div>
-                <div class="card-text">
-                    <h3>Ciencia</h3>
-                    <p>Libros para profundizar en la fisiología de la respiración</p>
-                </div>
-                <span class="card-arrow">→</span>
-            </a>
-            <a href="experiencias.html" class="card">
-                <div class="card-icon">🌊</div>
-                <div class="card-text">
-                    <h3>Experiencias</h3>
-                    <p>Prácticas vivenciales y respiración emocional</p>
-                </div>
-                <span class="card-arrow">→</span>
-            </a>
-            <a href="suplementos.html" class="card">
-                <div class="card-icon">⚗️</div>
-                <div class="card-text">
-                    <h3>Nutrición</h3>
-                    <p>Suplementación consciente como apoyo a la dieta real</p>
-                </div>
-                <span class="card-arrow">→</span>
-            </a>
-        </div>
- 
-        <footer class="footer">
-            <p>© 2025 Hackers de la Respiración &nbsp;|&nbsp; <span class="footer-blink">●</span> Sistema activo</p>
-        </footer>
+    </section>
+
+    <div class="section-cards">
+        <a href="ciencia.html" class="section-card">
+            <div class="sc-icon">🔬</div>
+            <div class="sc-title">Ciencia</div>
+            <p class="sc-desc">Libros para profundizar en la fisiología y neurociencia de la respiración.</p>
+            <span class="sc-arrow">Explorar →</span>
+        </a>
+        <a href="experiencias.html" class="section-card">
+            <div class="sc-icon">🌊</div>
+            <div class="sc-title">Experiencias</div>
+            <p class="sc-desc">Prácticas vivenciales y respiración emocional para sentir antes de entender.</p>
+            <span class="sc-arrow">Explorar →</span>
+        </a>
+        <a href="suplementos.html" class="section-card">
+            <div class="sc-icon">🌿</div>
+            <div class="sc-title">Nutrición</div>
+            <p class="sc-desc">Suplementación consciente como apoyo puntual a una dieta de alimentos reales.</p>
+            <span class="sc-arrow">Explorar →</span>
+        </a>
     </div>
- 
-    <script src="nav.js"></script>
+
+    <footer>
+        <p>© 2026 Hackers de la Respiración · David García-Pozuelo Ramos</p>
+    </footer>
+
+</div>
+<script src="nav.js"></script>
 </body>
 </html>
-

@@ -5,82 +5,125 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Experiencias — Hackers de la Respiración</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Rajdhani:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Nunito+Sans:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="scanlines"></div>
-    <div class="fondo">
+<div class="page">
 
-        <nav class="navbar">
-            <div class="nav-logo">&gt;_ HdR</div>
+    <nav class="navbar">
+        <div class="navbar-inner">
+            <a href="index.html" class="nav-logo">Hackers de la Respiración</a>
             <ul class="nav-links">
-                <li><a href="index.html">[INICIO]</a></li>
-                <li><a href="ciencia.html">[CIENCIA]</a></li>
-                <li><a href="experiencias.html" class="active">[EXPERIENCIAS]</a></li>
-                <li><a href="suplementos.html">[NUTRICIÓN]</a></li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="ciencia.html">Ciencia</a></li>
+                <li><a href="experiencias.html" class="active">Experiencias</a></li>
+                <li><a href="suplementos.html">Nutrición</a></li>
             </ul>
-            <div class="nav-burger" onclick="toggleMenu()">☰</div>
-        </nav>
+            <button class="nav-burger" onclick="toggleMenu()" aria-label="Menú">☰</button>
+        </div>
+    </nav>
 
-        <div class="page-header">
-            <p class="page-tag">&gt; módulo_03 / experiencias_vivenciales</p>
-            <h1 class="page-title">Si lo que buscas es<br><span>vivenciar experiencias</span><br>respiratorias más emocionales</h1>
+    <section class="page-hero">
+        <div class="page-hero-inner">
+            <p class="page-tag">Módulo · Prácticas vivenciales</p>
+            <h1 class="page-title">Si lo que buscas ahora es <em>vivenciar</em> experiencias respiratorias más emocionales</h1>
             <p class="page-intro">
-                Cuando la respiración deja de ser solo fisiología y se convierte en puerta de acceso
-                a estados emocionales profundos. Libros y recursos para quienes quieren 
-                sentir antes de entender.
+                Cuando la respiración deja de ser fisiología y se convierte en puerta de acceso 
+                a estados más profundos. Para quienes prefieren sentir a entender.
             </p>
         </div>
+    </section>
 
-        <div class="page-content">
+    <div class="content-wrap">
 
-            <!-- ====== AÑADE AQUÍ TUS LIBROS ====== -->
-            <!-- Duplica el bloque .book-card para cada nuevo libro -->
-            <!-- Sustituye el href del enlace, el título, autor y descripción -->
-
-            <div class="section-header">
-                <h2>Lectura recomendada</h2>
-                <div class="section-line"></div>
-            </div>
-
-            <a href="https://amzn.to/4trc9jd" class="book-card" target="_blank">
-                <div class="book-num">01</div>
-                <div class="book-info">
-                    <h3>Sanar el corazón — Ketan Raventós Klein</h3>
-                    <p class="author">Autor · Editorial</p>
-                    <p>Sin duda un libro de viaje al interior que te permite reconectar con tu entorno, actual y pasado, liberando recuerdos mentales y emocionales.</p>
-                </div>
-                <div class="book-arrow">→</div>
-            </a>
-            <a href="#" class="book-card" target="_blank">
-                <div class="book-num">02</div>
-                <div class="book-info">
-                    <h3>Título del libro 2</h3>
-                    <p class="author">Autor · Editorial</p>
-                    <p>Breve descripción del libro y por qué lo recomiendas.</p>
-                </div>
-                <div class="book-arrow">→</div>
-            </a>
-
-            <a href="#" class="book-card" target="_blank">
-                <div class="book-num">03</div>
-                <div class="book-info">
-                    <h3>Título del libro 3</h3>
-                    <p class="author">Autor · Editorial</p>
-                    <p>Breve descripción del libro y por qué lo recomiendas.</p>
-                </div>
-                <div class="book-arrow">→</div>
-            </a>
-
-            <!-- ====== FIN LIBROS ====== -->
-
+        <div class="section-head">
+            <h2>Lecturas recomendadas</h2>
+            <div class="section-line"></div>
         </div>
 
-        <footer class="footer">
-            <p>© 2025 Hackers de la Respiración &nbsp;|&nbsp; <span class="footer-blink">●</span> Sistema activo</p>
-        </footer>
-    </div>
-    <script src="nav.js"></script>
+        <!-- LIBRO 1: Tao para vivir -->
+        <a href="https://amzn.to/41ZMiCL" class="book-card" target="_blank">
+            <div class="book-num">01</div>
+            <div class="book-info">
+                <h3>Tao para vivir</h3>
+                <p class="author">Ángel García, Daniel García y Liu Zheng · Anaya Multimedia</p>
+                <p class="book-review">
+                    Hay una sabiduría que no se enseña, se recuerda. El Tao lleva milenios 
+                    apuntando hacia lo mismo que hoy nos confirma la neurociencia: que la calma 
+                    no se consigue, se permite. Este libro es una invitación a soltar. A respirar 
+                    desde la quietud, a moverse desde el centro. Sus páginas no te darán 
+                    instrucciones a seguir al pie de la letra —el Tao nunca funciona así—, sino 
+                    que te abrirán un espacio interior para que encuentres tu propio ritmo. 
+                    Si tu exploración de la respiración te ha llevado a preguntarte quién eres 
+                    cuando dejas de correr, este libro puede ser tu siguiente paso.
+                </p>
+            </div>
+            <div class="book-arrow">→</div>
+        </a>
+
+        <!-- LIBRO 2: El proceso de la presencia -->
+        <a href="https://amzn.to/4cwSxEd" class="book-card" target="_blank">
+            <div class="book-num">02</div>
+            <div class="book-info">
+                <h3>El proceso de la presencia</h3>
+                <p class="author">Michael Brown · Ediciones Obelisco</p>
+                <p class="book-review">
+                    Hay libros que se leen, y otros libros que te proponen una trabajo. Este es del 
+                    segundo tipo. Michael Brown nos ofrece algo aparentemente sencillo —estar 
+                    presente— y dedica sus páginas a explicar con una claridad extraordinaria 
+                    por qué nos cuesta tanto. La respuesta tiene que ver con todo lo que hemos 
+                    acumulado desde la infancia: capas emocionales que nos desconectan del 
+                    momento en que vivimos, sin que apenas lo advirtamos.
+                    <br><br>
+                    Su propuesta es un proceso de diez semanas en el que el compromiso central 
+                    es respirar conscientemente quince minutos dos veces al día. Sin grandes 
+                    aparatos, sin gurú. Solo tú, tu aliento y una afirmación semanal que activa 
+                    algo difícil de describir y fácil de sentir. Cada semana hay también un 
+                    capítulo del libro y, si quieres, algunos ejercicios de percepción.
+                    <br><br>
+                    Me gusta especialmente de Brown es que no promete un camino placentero. Él mismo 
+                    avisa: habrá momentos de incomodidad y días de humor extraño. Lo que propone 
+                    no es evitar los bloqueos, sino atravesarlos. Disolverlos desde dentro. 
+                    Integrarlo todo —lo bonito y lo difícil— como parte de lo que eres.
+                    <br><br>
+                    Muchas de las cosas que dice las había encontrado antes, en otros formatos, 
+                    en otras tradiciones. Pero aquí está todo integrado, bien explicado, listo 
+                    para hacerse solo. Además, en la web del autor 
+                    (<a href="http://www.thepresenceprocessportal.com/" target="_blank" 
+                    style="color:var(--gold);border-bottom:1px solid rgba(201,146,78,0.3);">
+                    thepresenceprocessportal.com</a>) encontrarás materiales complementarios: 
+                    un diario del proceso, el libro de la Integración y el Companion, que vale 
+                    la pena explorar si te manejas en inglés. La estructura del diario, 
+                    por sí sola, ya es un regalo.
+                    <br><br>
+                    Si te has adentrado en la respiración consciente y sientes que hay algo más 
+                    esperando al otro lado de esa práctica, este libro puede ser el umbral.
+                </p>
+            </div>
+            <div class="book-arrow">→</div>
+        </a>
+
+       <!-- LIBRO 3: Sanar el corazón -->
+        <a href="https://amzn.to/4trc9jd" class="book-card" target="_blank">
+            <div class="book-num">02</div>
+            <div class="book-info">
+                <h3>Sanar el corazón</h3>
+                <p class="author">Ketan Raventós Klein · Gaia Ediciones</p>
+                <p class="book-review">
+                    Para poder contarte, tendrás que esperar un poquito aún, ya que ésta es una de 
+		    mis próximas lecturas...
+                </p>
+            </div>
+            <div class="book-arrow">→</div>
+        </a>
+ 
+
+    <footer>
+        <p>© 2026 Hackers de la Respiración · David García-Pozuelo Ramos</p>
+    </footer>
+
+</div>
+<script src="nav.js"></script>
 </body>
 </html>

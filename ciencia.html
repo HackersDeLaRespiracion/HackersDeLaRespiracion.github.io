@@ -5,83 +5,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ciencia — Hackers de la Respiración</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Rajdhani:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Nunito+Sans:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="scanlines"></div>
-    <div class="fondo">
+<div class="page">
 
-        <nav class="navbar">
-            <div class="nav-logo">&gt;_ HdR</div>
+    <nav class="navbar">
+        <div class="navbar-inner">
+            <a href="index.html" class="nav-logo">Hackers de la Respiración</a>
             <ul class="nav-links">
-                <li><a href="index.html">[INICIO]</a></li>
-                <li><a href="ciencia.html" class="active">[CIENCIA]</a></li>
-                <li><a href="experiencias.html">[EXPERIENCIAS]</a></li>
-                <li><a href="suplementos.html">[NUTRICIÓN]</a></li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="ciencia.html" class="active">Ciencia</a></li>
+                <li><a href="experiencias.html">Experiencias</a></li>
+                <li><a href="suplementos.html">Nutrición</a></li>
             </ul>
-            <div class="nav-burger" onclick="toggleMenu()">☰</div>
-        </nav>
+            <button class="nav-burger" onclick="toggleMenu()" aria-label="Menú">☰</button>
+        </div>
+    </nav>
 
-        <div class="page-header">
-            <p class="page-tag">&gt; módulo_02 / lecturas_científicas</p>
-            <h1 class="page-title">Si te interesa profundizar en la<br><span>parte más científica</span> de la respiración</h1>
+    <section class="page-hero">
+        <div class="page-hero-inner">
+            <p class="page-tag">Módulo · Lecturas científicas</p>
+            <h1 class="page-title">Si te interesa profundizar en la <em>parte más científica</em> de la respiración</h1>
             <p class="page-intro">
-                Libros con base científica para entender qué ocurre realmente en tu cuerpo cuando respiras: 
-                fisiología, neurociencia, bioquímica del CO₂ y mucho más. 
-                Para los que necesitan el «por qué» antes del «cómo».
+                Libros con base científica para entender qué ocurre realmente en tu cuerpo 
+                cuando respiras. Para los que necesitan el «por qué» antes del «cómo».
             </p>
         </div>
+    </section>
 
-        <div class="page-content">
+    <div class="content-wrap">
 
-            <!-- ====== AÑADE AQUÍ TUS LIBROS ====== -->
-            <!-- Duplica el bloque .book-card para cada nuevo libro -->
-            <!-- Sustituye el href del enlace, el título, autor y descripción -->
-
-            <div class="section-header">
-                <h2>Lectura recomendada</h2>
-                <div class="section-line"></div>
-            </div>
-
-            <a href="#" class="book-card" target="_blank">
-                <div class="book-num">01</div>
-                <div class="book-info">
-                    <h3>Título del libro 1</h3>
-                    <p class="author">Autor · Editorial</p>
-                    <p>Breve descripción del libro y por qué lo recomiendas. Qué aporta al lector interesado en la ciencia de la respiración.</p>
-                </div>
-                <div class="book-arrow">→</div>
-            </a>
-
-            <a href="#" class="book-card" target="_blank">
-                <div class="book-num">02</div>
-                <div class="book-info">
-                    <h3>Título del libro 2</h3>
-                    <p class="author">Autor · Editorial</p>
-                    <p>Breve descripción del libro y por qué lo recomiendas.</p>
-                </div>
-                <div class="book-arrow">→</div>
-            </a>
-
-            <a href="#" class="book-card" target="_blank">
-                <div class="book-num">03</div>
-                <div class="book-info">
-                    <h3>Título del libro 3</h3>
-                    <p class="author">Autor · Editorial</p>
-                    <p>Breve descripción del libro y por qué lo recomiendas.</p>
-                </div>
-                <div class="book-arrow">→</div>
-            </a>
-
-            <!-- ====== FIN LIBROS ====== -->
-
+        <div class="section-head">
+            <h2>Lecturas recomendadas</h2>
+            <div class="section-line"></div>
         </div>
 
-        <footer class="footer">
-            <p>© 2025 Hackers de la Respiración &nbsp;|&nbsp; <span class="footer-blink">●</span> Sistema activo</p>
-        </footer>
+        <!-- LIBRO 1: Tu cuerpo tiene las respuestas -->
+        <a href="https://amzn.to/4etBVib" class="book-card" target="_blank">
+            <div class="book-num">01</div>
+            <div class="book-info">
+                <h3>Tu cuerpo tiene las respuestas</h3>
+                <p class="author">Giulia Enders · Editorial Planeta</p>
+                <p class="book-review">
+                    Este libro ha cambiado la forma en que me veo, gracias a las explicaciones de Giulia 
+                    Enders sobre la biología del cuerpo humano. Escribe con, claridad, humor y abordando 
+		    los temas con una perspectiva que incluye el comportamiento. 
+                    En estas páginas descubrirás que tu cuerpo no es un misterio opaco, sino un sistema 
+                    extraordinariamente inteligente que, muchas veces, ya sabe lo que necesitas. 
+                    Solo hay que aprender a escucharlo. Si te ha picado el gusanillo de entender qué 
+                    ocurre dentro de ti cada vez que respiras, este libro te dará una base sólida y 
+                    sorprendente desde la que seguir explorando.
+                </p>
+            </div>
+            <div class="book-arrow">→</div>
+        </a>
+
+        <!-- LIBRO 2: Neurociencia del cuerpo -->
+        <a href="https://amzn.to/4vQOslN" class="book-card" target="_blank">
+            <div class="book-num">02</div>
+            <div class="book-info">
+                <h3>Neurociencia del cuerpo</h3>
+                <p class="author">Nazaret Castellanos · Editorial Kairós SA</p>
+                <p class="book-review">
+                    Nazaret Castellanos es investigadora y divulgadora, y en este libro —su gran 
+                    éxito editorial— demuestra que el cuerpo no es simplemente el soporte donde 
+                    vive la mente: es parte activa de cómo pensamos, sentimos y tomamos decisiones. 
+                    A través de la neurociencia más reciente, explora cómo la postura, la respiración 
+                    y las sensaciones físicas moldean nuestra experiencia interior. 
+                    Después de leerlo miré mi respiración con otros ojos.
+                </p>
+            </div>
+            <div class="book-arrow">→</div>
+        </a>
+
+        <!-- ESPACIO PARA AÑADIR MÁS LIBROS -->
+        <!-- Duplica el bloque .book-card y actualiza href, título, autor y reseña -->
+
     </div>
-    <script src="nav.js"></script>
+
+    <footer>
+        <p>© 2026 Hackers de la Respiración · David García-Pozuelo Ramos</p>
+    </footer>
+
+</div>
+<script src="nav.js"></script>
 </body>
 </html>

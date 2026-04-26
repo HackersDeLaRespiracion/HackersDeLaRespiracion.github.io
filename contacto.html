@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto — Hackers de la Respiración</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="page bg-home">
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="navbar-inner">
+            <a class="nav-logo" href="index.html">Hackers de la Respiración</a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="ciencia.html">Ciencia</a></li>
+                <li><a href="experiencias.html">Experiencias</a></li>
+                <li><a href="suplementos.html">Nutrición</a></li>
+                <li><a href="contacto.html" class="active">Contacto</a></li>
+            </ul>
+            <button class="nav-burger" id="burger" aria-label="Menú">☰</button>
+        </div>
+    </nav>
+
+    <!-- PAGE HERO -->
+    <header class="page-hero">
+        <div class="page-hero-inner">
+            <div class="page-tag">Contacto</div>
+            <h1 class="page-title">Hablemos</h1>
+            <p class="page-intro">
+                Si tienes preguntas, sugerencias o simplemente quieres compartir
+                tu experiencia con la respiración, estoy al otro lado.
+            </p>
+        </div>
+    </header>
+
+    <!-- CONTENT -->
+    <main class="content-wrap">
+
+        <!-- Intro -->
+        <div class="section-head">
+            <h2>Cómo encontrarme</h2>
+            <div class="section-line"></div>
+        </div>
+
+        <!-- Cards de contacto -->
+        <div class="contact-grid">
+
+            <!-- Email -->
+            <a class="contact-card" href="mailto:davidgarciapozueloramos@gmail.com">
+                <div class="contact-icon">✉️</div>
+                <div class="contact-info">
+                    <div class="contact-label">Correo electrónico</div>
+                    <div class="contact-value">davidgarciapozueloramos@gmail.com</div>
+                    <div class="contact-hint">Para consultas, colaboraciones o simplemente charlar.</div>
+                </div>
+                <div class="contact-arrow">→</div>
+            </a>
+
+            <!-- Instagram -->
+            <a class="contact-card" href="https://www.instagram.com/davidgarciapozueloramos" target="_blank" rel="noopener noreferrer">
+                <div class="contact-icon">📸</div>
+                <div class="contact-info">
+                    <div class="contact-label">Instagram</div>
+                    <div class="contact-value">@davidgarciapozueloramos</div>
+                    <div class="contact-hint">Contenido del día a día, reflexiones y novedades del proyecto.</div>
+                </div>
+                <div class="contact-arrow">→</div>
+            </a>
+
+        </div>
+
+        <!-- Nota personal -->
+        <div class="disclaimer">
+            <strong>Una nota personal:</strong> Este proyecto nace del entusiasmo genuino por
+            la respiración y el bienestar. Intento responder a todos los mensajes, aunque a veces
+            tarde un poco. Gracias por tu paciencia y por tu interés.
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2025 David García-Pozuelo Ramos · <a href="legal.html">Aviso legal</a></p>
+    </footer>
+
+    <!-- BURGER SCRIPT -->
+    <script>
+        document.getElementById('burger').addEventListener('click', () => {
+            document.getElementById('navLinks').classList.toggle('open');
+        });
+    </script>
+
+    <!-- ESTILOS ESPECÍFICOS DE ESTA PÁGINA -->
+    <style>
+        /* Grid de contacto */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+
+        /* Card de contacto */
+        .contact-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 28px 24px;
+            display: flex;
+            align-items: flex-start;
+            gap: 18px;
+            text-decoration: none;
+            color: var(--text);
+            box-shadow: var(--shadow);
+            transition: all 0.2s;
+        }
+        .contact-card:hover {
+            border-color: var(--sage);
+            box-shadow: var(--shadow-lg);
+            transform: translateY(-2px);
+        }
+
+        /* Icono */
+        .contact-icon {
+            font-size: 1.8rem;
+            flex-shrink: 0;
+            line-height: 1;
+            margin-top: 2px;
+        }
+
+        /* Texto */
+        .contact-info {
+            flex: 1;
+        }
+        .contact-label {
+            font-size: 0.68rem;
+            font-weight: 600;
+            letter-spacing: 2.5px;
+            text-transform: uppercase;
+            color: var(--sage);
+            margin-bottom: 6px;
+        }
+        .contact-value {
+            font-family: var(--font-head);
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: var(--text);
+            margin-bottom: 8px;
+            word-break: break-all;
+        }
+        .contact-hint {
+            font-size: 0.82rem;
+            color: var(--text-mid);
+            line-height: 1.55;
+        }
+
+        /* Flecha */
+        .contact-arrow {
+            color: var(--gold);
+            font-size: 1.2rem;
+            align-self: center;
+            flex-shrink: 0;
+            transition: transform 0.2s;
+        }
+        .contact-card:hover .contact-arrow {
+            transform: translateX(4px);
+        }
+
+        /* Responsive */
+        @media (max-width: 640px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+            .contact-card {
+                flex-direction: row;
+                align-items: flex-start;
+            }
+        }
+    </style>
+
+</body>
+</html>

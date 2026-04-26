@@ -331,7 +331,7 @@ body {
 .bg-ciencia {
     background:
         linear-gradient(rgba(247,244,238,0.92), rgba(247,244,238,0.96)),
-        url("Images/fondo-ciencia.jpg");
+        url("Images/fondo-ciencia.png");
 }
 
 /* EXPERIENCIAS */
@@ -339,7 +339,7 @@ body {
 .bg-experiencias {
     background:
         linear-gradient(rgba(247,244,238,0.90), rgba(247,244,238,0.94)),
-        url("Images/fondo-experiencias.jpg");
+        url("Images/fondo-experiencia.png");
 }
 
 /* NUTRICIÓN */
@@ -347,7 +347,7 @@ body {
 .bg-nutricion {
     background:
         linear-gradient(rgba(247,244,238,0.92), rgba(247,244,238,0.96)),
-        url("Images/fondo-nutricion.jpg");
+        url("Images/fondo-nutricion.png");
 }
 
 /* LEGALES */

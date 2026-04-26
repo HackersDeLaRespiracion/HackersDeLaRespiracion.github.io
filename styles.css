@@ -28,13 +28,17 @@ html { scroll-behavior: smooth; }
 
 body {
     font-family: var(--font-body);
-    background: var(--bg);
+    background:
+        linear-gradient(rgba(247,244,238,0.90), rgba(247,244,238,0.94)),
+        url("Images/fondo.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     color: var(--text);
     line-height: 1.7;
     font-size: 16px;
     min-height: 100vh;
 }
-
 .page { display: flex; flex-direction: column; min-height: 100vh; }
 
 /* ---- NAVBAR ---- */
@@ -89,7 +93,6 @@ body {
 .hero {
     background-image:
         linear-gradient(rgba(247,244,238,0.55), rgba(247,244,238,0.88)),
-        url("Images/fondo.png");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -196,7 +199,8 @@ body {
 
 /* ---- PAGE HERO (interior) ---- */
 .page-hero {
-    background: var(--bg-soft); border-bottom: 1px solid var(--border);
+    background: rgba(238,234,224,0.75);
+    backdrop-filter: blur(2px); border-bottom: 1px solid var(--border);
     padding: 56px 32px 48px; text-align: center;
 }
 .page-hero-inner { max-width: var(--max); margin: 0 auto; animation: fadeUp 0.6s ease both; }
@@ -210,8 +214,17 @@ body {
 
 /* ---- CONTENT WRAP ---- */
 .content-wrap {
-    max-width: var(--max); margin: 0 auto;
-    padding: 48px 32px 72px; display: flex; flex-direction: column; gap: 20px; flex: 1;
+    max-width: var(--max);
+    margin: 0 auto;
+    padding: 48px 32px 72px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+
+    background: rgba(255,255,255,0.45);
+    backdrop-filter: blur(3px);
+    border-radius: var(--radius);
 }
 
 /* ---- SECTION HEAD ---- */
@@ -293,4 +306,54 @@ footer a { color: var(--sage); text-decoration: none; }
     .compat-grid { grid-template-columns: 1fr; }
     .book-card { flex-direction: column; }
     .book-num { font-size: 1rem; }
+}
+
+/* =========================================
+   FONDOS POR SECCIÓN
+   ========================================= */
+
+body {
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* HOME */
+
+.bg-home {
+    background:
+        linear-gradient(rgba(247,244,238,0.88), rgba(247,244,238,0.92)),
+        url("Images/fondo.png");
+}
+
+/* CIENCIA */
+
+.bg-ciencia {
+    background:
+        linear-gradient(rgba(247,244,238,0.92), rgba(247,244,238,0.96)),
+        url("Images/fondo-ciencia.jpg");
+}
+
+/* EXPERIENCIAS */
+
+.bg-experiencias {
+    background:
+        linear-gradient(rgba(247,244,238,0.90), rgba(247,244,238,0.94)),
+        url("Images/fondo-experiencias.jpg");
+}
+
+/* NUTRICIÓN */
+
+.bg-nutricion {
+    background:
+        linear-gradient(rgba(247,244,238,0.92), rgba(247,244,238,0.96)),
+        url("Images/fondo-nutricion.jpg");
+}
+
+/* LEGALES */
+
+.bg-legal {
+    background:
+        linear-gradient(rgba(247,244,238,0.94), rgba(247,244,238,0.97)),
+        url("Images/fondo.png");
 }

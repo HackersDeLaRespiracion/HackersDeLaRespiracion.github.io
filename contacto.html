@@ -71,7 +71,16 @@
                 </div>
                 <div class="contact-arrow">→</div>
             </a>
-
+	    <!-- LinkedIn -->
+	    <a class="contact-card" href="https://www.linkedin.com/in/david-garc%C3%ADa-pozuelo-ramos-06617925/" target="_blank" rel="noopener noreferrer">
+	        <div class="contact-icon">💼</div>
+	        <div class="contact-info">
+	            <div class="contact-label">LinkedIn</div>
+	            <div class="contact-value">David García-Pozuelo Ramos</div>
+	            <div class="contact-hint">Trayectoria profesional y conexiones.</div>
+	        </div>
+	        <div class="contact-arrow">→</div>
+	    </a>
         </div>
 
         <!-- Nota personal -->
@@ -97,7 +106,7 @@
         /* Grid de contacto */
         .contact-grid {
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
             gap: 16px;
         }
 

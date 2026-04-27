@@ -318,53 +318,52 @@ footer a { color: var(--sage); text-decoration: none; }
    FONDOS POR SECCIÓN
    ========================================= */
 
-body {
+.bg-home {
+    background-image:
+        linear-gradient(rgba(247,244,238,0.50), rgba(247,244,238,0.58)),
+        url("Images/fondo.png");
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
-/* HOME */
-
-.bg-home {
-    background:
-        linear-gradient(rgba(247,244,238,0.50), rgba(247,244,238,0.58)),
-        url("Images/fondo.png");
-   	background-attachment: fixed;
-}
-
-/* CIENCIA */
-
 .bg-ciencia {
-    background:
+    background-image:
         linear-gradient(rgba(247,244,238,0.50), rgba(247,244,238,0.58)),
         url("Images/fondo-ciencia.png");
-   	background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
-
-/* EXPERIENCIAS */
 
 .bg-experiencias {
-    background:
+    background-image:
         linear-gradient(rgba(247,244,238,0.50), rgba(247,244,238,0.58)),
         url("Images/fondo-experiencia.png");
-   	background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
-
-/* NUTRICIÓN */
 
 .bg-nutricion {
-    background:
+    background-image:
         linear-gradient(rgba(247,244,238,0.50), rgba(247,244,238,0.58)),
         url("Images/fondo-nutricion.png");
-   	background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
-/* LEGALES */
-
 .bg-legal {
-    background:
+    background-image:
         linear-gradient(rgba(247,244,238,0.50), rgba(247,244,238,0.58)),
         url("Images/fondo.png");
-   	background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }

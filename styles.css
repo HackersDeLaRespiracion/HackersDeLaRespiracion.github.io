@@ -148,6 +148,13 @@ body {
 .review-card .review-text { font-size: 0.82rem; color: var(--text-mid); line-height: 1.65; }
 .review-card .review-meta { font-size: 0.71rem; color: var(--text-dim); margin-top: 10px; font-style: italic; }
 .reviews-amazon-link { text-align: center; padding: 4px 0 8px; }
+.review-card {
+    max-width: var(--max); margin: 0 auto;
+    animation: fadeUp 0.7s ease both;
+    background: rgba(255,255,255,0.22); backdrop-filter: blur(6px);
+    border: 1px solid var(--border); border-radius: var(--radius);
+    box-shadow: var(--shadow); padding: 40px 36px;
+}
 
 /* ---- SECTION CARDS (home) ---- */
 .section-cards {

@@ -5,52 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto — Hackers de la Respiración</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Nunito+Sans:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="Images/icon.png" type="image/png">
 </head>
-<body class="page bg-home">
-
-    <!-- NAVBAR -->
+<body class="bg-home" data-lang="es" data-alt-href="en/contact.html">
+<div class="page">
     <nav class="navbar">
         <div class="navbar-inner">
-            <a class="nav-logo" href="index.html">Hackers de la Respiración</a>
-            <ul class="nav-links" id="navLinks">
+            <a href="index.html" class="nav-logo">Hackers de la Respiración</a>
+            <ul class="nav-links">
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="ciencia.html">Ciencia</a></li>
                 <li><a href="experiencias.html">Experiencias</a></li>
                 <li><a href="suplementos.html">Nutrición</a></li>
-                <li><a href="contacto.html" class="active">Contacto</a></li>
             </ul>
-            <button class="nav-burger" id="burger" aria-label="Menú">☰</button>
+            <div class="lang-switch">
+                <a class="lang-btn" data-lang="es">ES</a>
+                <span class="lang-sep">·</span>
+                <a class="lang-btn" data-lang="en" href="#">EN</a>
+            </div>
+            <button class="nav-burger" onclick="toggleMenu()" aria-label="Menú">☰</button>
         </div>
     </nav>
-
-    <!-- PAGE HERO -->
-    <header class="page-hero">
+    <section class="page-hero">
         <div class="page-hero-inner">
             <div class="page-tag">Contacto</div>
             <h1 class="page-title">Hablemos</h1>
-            <p class="page-intro">
-                Si tienes preguntas, sugerencias o simplemente quieres compartir
-                tu experiencia con la respiración, estoy al otro lado.
-            </p>
+            <p class="page-intro">Si tienes preguntas, sugerencias o simplemente quieres compartir tu experiencia con la respiración, estoy al otro lado.</p>
         </div>
-    </header>
-
-    <!-- CONTENT -->
+    </section>
     <main class="content-wrap">
-
-        <!-- Intro -->
-        <div class="section-head">
-            <h2>Cómo encontrarme</h2>
-            <div class="section-line"></div>
-        </div>
-
-        <!-- Cards de contacto -->
+        <div class="section-head"><h2>Cómo encontrarme</h2><div class="section-line"></div></div>
         <div class="contact-grid">
-
-            <!-- Email -->
             <a class="contact-card" href="mailto:davidgarciapozueloramos@gmail.com">
                 <div class="contact-icon">✉️</div>
                 <div class="contact-info">
@@ -60,8 +47,6 @@
                 </div>
                 <div class="contact-arrow">→</div>
             </a>
-
-            <!-- Instagram -->
             <a class="contact-card" href="https://www.instagram.com/davidgarciapozueloramos" target="_blank" rel="noopener noreferrer">
                 <div class="contact-icon">📸</div>
                 <div class="contact-info">
@@ -71,125 +56,21 @@
                 </div>
                 <div class="contact-arrow">→</div>
             </a>
-	    <!-- LinkedIn -->
-	    <a class="contact-card" href="https://www.linkedin.com/in/david-garc%C3%ADa-pozuelo-ramos-06617925/" target="_blank" rel="noopener noreferrer">
-	        <div class="contact-icon">💼</div>
-	        <div class="contact-info">
-	            <div class="contact-label">LinkedIn</div>
-	            <div class="contact-value">David García-Pozuelo Ramos</div>
-	            <div class="contact-hint">Trayectoria profesional y conexiones.</div>
-	        </div>
-	        <div class="contact-arrow">→</div>
-	    </a>
+            <a class="contact-card" href="https://www.linkedin.com/in/david-garc%C3%ADa-pozuelo-ramos-06617925/" target="_blank" rel="noopener noreferrer">
+                <div class="contact-icon">💼</div>
+                <div class="contact-info">
+                    <div class="contact-label">LinkedIn</div>
+                    <div class="contact-value">David García-Pozuelo Ramos</div>
+                    <div class="contact-hint">Trayectoria profesional y conexiones.</div>
+                </div>
+                <div class="contact-arrow">→</div>
+            </a>
         </div>
-
-        <!-- Nota personal -->
-        <div class="disclaimer">
-            <strong>Una nota personal:</strong> Este proyecto nace del entusiasmo genuino por
-            la respiración y el bienestar. Intento responder a todos los mensajes, aunque a veces
-            tarde un poco. Gracias por tu paciencia y por tu interés.
-        </div>
-
+        <div class="disclaimer"><strong>Una nota personal:</strong> Este proyecto nace del entusiasmo genuino por la respiración y el bienestar. Intento responder a todos los mensajes, aunque a veces tarde un poco. Gracias por tu paciencia y por tu interés.</div>
     </main>
-
-  
-
-    <!-- BURGER SCRIPT -->
-    <script>
-        document.getElementById('burger').addEventListener('click', () => {
-            document.getElementById('navLinks').classList.toggle('open');
-        });
-    </script>
-
-    <!-- ESTILOS ESPECÍFICOS DE ESTA PÁGINA -->
-    <style>
-        /* Grid de contacto */
-        .contact-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-            gap: 16px;
-        }
-
-        /* Card de contacto */
-        .contact-card {
-            background: var(--bg-card);
-            border: 1px solid var(--border);
-            border-radius: var(--radius);
-            padding: 28px 24px;
-            display: flex;
-            align-items: flex-start;
-            gap: 18px;
-            text-decoration: none;
-            color: var(--text);
-            box-shadow: var(--shadow);
-            transition: all 0.2s;
-        }
-        .contact-card:hover {
-            border-color: var(--sage);
-            box-shadow: var(--shadow-lg);
-            transform: translateY(-2px);
-        }
-
-        /* Icono */
-        .contact-icon {
-            font-size: 1.8rem;
-            flex-shrink: 0;
-            line-height: 1;
-            margin-top: 2px;
-        }
-
-        /* Texto */
-        .contact-info {
-            flex: 1;
-        }
-        .contact-label {
-            font-size: 0.68rem;
-            font-weight: 600;
-            letter-spacing: 2.5px;
-            text-transform: uppercase;
-            color: var(--sage);
-            margin-bottom: 6px;
-        }
-        .contact-value {
-            font-family: var(--font-head);
-            font-size: 0.95rem;
-            font-weight: 600;
-            color: var(--text);
-            margin-bottom: 8px;
-            word-break: break-all;
-        }
-        .contact-hint {
-            font-size: 0.82rem;
-            color: var(--text-mid);
-            line-height: 1.55;
-        }
-
-        /* Flecha */
-        .contact-arrow {
-            color: var(--gold);
-            font-size: 1.2rem;
-            align-self: center;
-            flex-shrink: 0;
-            transition: transform 0.2s;
-        }
-        .contact-card:hover .contact-arrow {
-            transform: translateX(4px);
-        }
-
-        /* Responsive */
-        @media (max-width: 640px) {
-            .contact-grid {
-                grid-template-columns: 1fr;
-            }
-            .contact-card {
-                flex-direction: row;
-                align-items: flex-start;
-            }
-        }
-    </style>
-<div id="footer"></div>
-<script src="footer.js"></script>
+    <div id="footer"></div>
+    <script src="footer.js"></script>
 </div>
-
+<script src="nav.js"></script>
 </body>
 </html>

@@ -1,61 +1,45 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Política de privacidad</title>
-<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de privacidad — Hackers de la Respiración</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Nunito+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="Images/icon.png" type="image/png">
 </head>
-
-<body class="bg-legal">
+<body class="bg-legal" data-lang="es" data-alt-href="en/privacy.html">
 <div class="page">
-
-<section class="page-hero">
-<div class="page-hero-inner">
-<h1 class="page-title">Política de privacidad</h1>
+    <nav class="navbar">
+        <div class="navbar-inner">
+            <a href="index.html" class="nav-logo">Hackers de la Respiración</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="ciencia.html">Ciencia</a></li>
+                <li><a href="experiencias.html">Experiencias</a></li>
+                <li><a href="suplementos.html">Nutrición</a></li>
+            </ul>
+            <div class="lang-switch">
+                <a class="lang-btn" data-lang="es">ES</a>
+                <span class="lang-sep">·</span>
+                <a class="lang-btn" data-lang="en" href="#">EN</a>
+            </div>
+            <button class="nav-burger" onclick="toggleMenu()" aria-label="Menú">☰</button>
+        </div>
+    </nav>
+    <section class="page-hero"><div class="page-hero-inner"><h1 class="page-title">Política de privacidad</h1></div></section>
+    <div class="content-wrap prose">
+        <p>Este sitio web no recoge datos personales de los usuarios, salvo los que el propio usuario facilite voluntariamente al contactar.</p>
+        <h3>Finalidad</h3><p>Los datos facilitados se utilizarán únicamente para responder consultas.</p>
+        <h3>Legitimación</h3><p>La base legal es el consentimiento del usuario.</p>
+        <h3>Conservación de datos</h3><p>Los datos se conservarán únicamente el tiempo necesario para responder.</p>
+        <h3>Derechos</h3><p>El usuario puede ejercer sus derechos de acceso, rectificación o eliminación solicitándolo al titular del sitio.</p>
+        <h3>Cookies</h3><p>Este sitio puede utilizar cookies técnicas necesarias para su funcionamiento.</p>
+    </div>
+    <div id="footer"></div>
+    <script src="footer.js"></script>
 </div>
-</section>
-
-<div class="content-wrap">
-
-<p>
-Este sitio web no recoge datos personales de los usuarios, salvo los que el propio usuario facilite voluntariamente al contactar.
-</p>
-
-<h3>Finalidad</h3>
-
-<p>
-Los datos facilitados se utilizarán únicamente para responder consultas.
-</p>
-
-<h3>Legitimación</h3>
-
-<p>
-La base legal es el consentimiento del usuario.
-</p>
-
-<h3>Conservación de datos</h3>
-
-<p>
-Los datos se conservarán únicamente el tiempo necesario para responder.
-</p>
-
-<h3>Derechos</h3>
-
-<p>
-El usuario puede ejercer sus derechos de acceso, rectificación o eliminación solicitándolo al titular del sitio.
-</p>
-
-<h3>Cookies</h3>
-
-<p>
-Este sitio puede utilizar cookies técnicas necesarias para su funcionamiento.
-</p>
-
-</div>
-
-<div id="footer"></div>
-<script src="footer.js"></script>
-</div>
+<script src="nav.js"></script>
 </body>
 </html>

@@ -7,10 +7,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Nunito+Sans:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="Images/icon.png" type="image/png">
 </head>
-<body class="bg-ciencia">
+<body class="bg-ciencia" data-lang="es" data-alt-href="en/science.html">
 <div class="page">
-
     <nav class="navbar">
         <div class="navbar-inner">
             <a href="index.html" class="nav-logo">Hackers de la Respiración</a>
@@ -20,73 +20,67 @@
                 <li><a href="experiencias.html">Experiencias</a></li>
                 <li><a href="suplementos.html">Nutrición</a></li>
             </ul>
+            <div class="lang-switch">
+                <a class="lang-btn" data-lang="es">ES</a>
+                <span class="lang-sep">·</span>
+                <a class="lang-btn" data-lang="en" href="#">EN</a>
+            </div>
             <button class="nav-burger" onclick="toggleMenu()" aria-label="Menú">☰</button>
         </div>
     </nav>
-
     <section class="page-hero">
         <div class="page-hero-inner">
             <p class="page-tag">Módulo · Lecturas científicas</p>
             <h1 class="page-title">Si te interesa profundizar en la <em>parte más científica</em> de la respiración</h1>
-            <p class="page-intro">
-                Libros con base científica para entender qué ocurre realmente en tu cuerpo 
-                cuando respiras. Para los que necesitan el «por qué» antes del «cómo».
-            </p>
+            <p class="page-intro">Libros con base científica para entender qué ocurre realmente en tu cuerpo cuando respiras. Para los que necesitan el «por qué» antes del «cómo».</p>
         </div>
     </section>
-
     <div class="content-wrap">
-
-        <div class="section-head">
-            <h2>Lecturas recomendadas</h2>
-            <div class="section-line"></div>
-        </div>
-
-        <!-- LIBRO 1: Tu cuerpo tiene las respuestas -->
-        <a href="https://amzn.to/4etBVib" class="book-card" target="_blank">
+        <div class="section-head"><h2>Lecturas recomendadas</h2><div class="section-line"></div></div>
+        <div class="book-card">
             <div class="book-num">01</div>
             <div class="book-info">
                 <h3>Tu cuerpo tiene las respuestas</h3>
                 <p class="author">Giulia Enders · Editorial Planeta</p>
-                <p class="book-review">
-                    Este libro ha cambiado la forma en que me veo, gracias a las explicaciones de Giulia 
-                    Enders sobre la biología del cuerpo humano. Escribe con, claridad, humor y abordando 
-		    los temas con una perspectiva que incluye el comportamiento. 
-                    En estas páginas descubrirás que tu cuerpo no es un misterio opaco, sino un sistema 
-                    extraordinariamente inteligente que, muchas veces, ya sabe lo que necesitas. 
-                    Solo hay que aprender a escucharlo. Si te ha picado el gusanillo de entender qué 
-                    ocurre dentro de ti cada vez que respiras, este libro te dará una base sólida y 
-                    sorprendente desde la que seguir explorando.
-                </p>
+                <p class="book-review">Este libro ha cambiado la forma en que me veo, gracias a las explicaciones de Giulia Enders sobre la biología del cuerpo humano. Escribe con claridad, humor y abordando los temas con una perspectiva que incluye el comportamiento. En estas páginas descubrirás que tu cuerpo no es un misterio opaco, sino un sistema extraordinariamente inteligente que, muchas veces, ya sabe lo que necesitas. Solo hay que aprender a escucharlo.</p>
+                <div class="book-actions">
+                    <a href="https://amzn.to/4etBVib" class="btn-action amazon" target="_blank" rel="noopener">📖 Ver en Amazon</a>
+                    <a href="https://amzn.to/4etBVib#customerReviews" class="btn-action reviews" target="_blank" rel="noopener">⭐ Reseñas en Amazon</a>
+                    <a href="resenas/tu-cuerpo-tiene-las-respuestas.html" class="btn-action blog">📝 Mi reseña</a>
+                </div>
+                <details class="reviews-details">
+                    <summary>Opiniones de lectores en Amazon</summary>
+                    <div class="reviews-scroll">
+                        <div class="review-item"><div class="review-stars">★★★★★</div><div class="review-title">Título</div><div class="review-text">Texto de la opinión.</div><div class="review-meta">Nombre · Fecha</div></div>
+                        <div class="review-item"><div class="review-stars">★★★★☆</div><div class="review-title">Título</div><div class="review-text">Texto de la opinión.</div><div class="review-meta">Nombre · Fecha</div></div>
+                    </div>
+                    <div class="reviews-footer"><a href="https://amzn.to/4etBVib#customerReviews" class="btn-action amazon" target="_blank" rel="noopener">Ver todas las reseñas en Amazon →</a></div>
+                </details>
             </div>
-            <div class="book-arrow">→</div>
-        </a>
-
-        <!-- LIBRO 2: Neurociencia del cuerpo -->
-        <a href="https://amzn.to/4vQOslN" class="book-card" target="_blank">
+        </div>
+        <div class="book-card">
             <div class="book-num">02</div>
             <div class="book-info">
                 <h3>Neurociencia del cuerpo</h3>
                 <p class="author">Nazaret Castellanos · Editorial Kairós SA</p>
-                <p class="book-review">
-                    Nazaret Castellanos es investigadora y divulgadora, y en este libro —su gran 
-                    éxito editorial— demuestra que el cuerpo no es simplemente el soporte donde 
-                    vive la mente: es parte activa de cómo pensamos, sentimos y tomamos decisiones. 
-                    A través de la neurociencia más reciente, explora cómo la postura, la respiración 
-                    y las sensaciones físicas moldean nuestra experiencia interior. 
-                    Después de leerlo miré mi respiración con otros ojos.
-                </p>
+                <p class="book-review">Nazaret Castellanos demuestra en este libro que el cuerpo no es simplemente el soporte donde vive la mente: es parte activa de cómo pensamos, sentimos y tomamos decisiones. A través de la neurociencia más reciente, explora cómo la postura, la respiración y las sensaciones físicas moldean nuestra experiencia interior. Después de leerlo miré mi respiración con otros ojos.</p>
+                <div class="book-actions">
+                    <a href="https://amzn.to/4vQOslN" class="btn-action amazon" target="_blank" rel="noopener">📖 Ver en Amazon</a>
+                    <a href="https://amzn.to/4vQOslN#customerReviews" class="btn-action reviews" target="_blank" rel="noopener">⭐ Reseñas en Amazon</a>
+                    <a href="resenas/neurociencia-del-cuerpo.html" class="btn-action blog">📝 Mi reseña</a>
+                </div>
+                <details class="reviews-details">
+                    <summary>Opiniones de lectores en Amazon</summary>
+                    <div class="reviews-scroll">
+                        <div class="review-item"><div class="review-stars">★★★★★</div><div class="review-title">Título</div><div class="review-text">Texto de la opinión.</div><div class="review-meta">Nombre · Fecha</div></div>
+                    </div>
+                    <div class="reviews-footer"><a href="https://amzn.to/4vQOslN#customerReviews" class="btn-action amazon" target="_blank" rel="noopener">Ver todas las reseñas en Amazon →</a></div>
+                </details>
             </div>
-            <div class="book-arrow">→</div>
-        </a>
-
-        <!-- ESPACIO PARA AÑADIR MÁS LIBROS -->
-        <!-- Duplica el bloque .book-card y actualiza href, título, autor y reseña -->
-
+        </div>
     </div>
-
-<div id="footer"></div>
-<script src="footer.js"></script>
+    <div id="footer"></div>
+    <script src="footer.js"></script>
 </div>
 <script src="nav.js"></script>
 </body>

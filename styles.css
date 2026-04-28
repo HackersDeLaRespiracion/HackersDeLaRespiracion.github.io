@@ -424,3 +424,22 @@ footer a:hover { text-decoration: underline; }
 /* /Entradas_blog/ y /Blog_entries/ — rutas con ../ */
 .bg-blog-nutricion    { background-image: linear-gradient(rgba(247,244,238,0.50),rgba(247,244,238,0.58)), url("../Images/fondo-nutricion.png"); background-size:cover;background-position:center;background-repeat:no-repeat;background-attachment:fixed; }
 .bg-blog-en-nutrition { background-image: linear-gradient(rgba(247,244,238,0.50),rgba(247,244,238,0.58)), url("../Images/fondo-nutricion.png"); background-size:cover;background-position:center;background-repeat:no-repeat;background-attachment:fixed; }
+
+/* ---- Blog entries en RAÍZ (sin ../) ---- */
+.bg-blog-nutricion-root {
+    background-image: linear-gradient(rgba(247,244,238,0.50),rgba(247,244,238,0.58)), url("Images/fondo-nutricion.png");
+    background-size:cover; background-position:center; background-repeat:no-repeat; background-attachment:fixed;
+}
+.bg-blog-ciencia-root {
+    background-image: linear-gradient(rgba(247,244,238,0.50),rgba(247,244,238,0.58)), url("Images/fondo-ciencia.png");
+    background-size:cover; background-position:center; background-repeat:no-repeat; background-attachment:fixed;
+}
+.bg-blog-experiencias-root {
+    background-image: linear-gradient(rgba(247,244,238,0.50),rgba(247,244,238,0.58)), url("Images/fondo-experiencia.png");
+    background-size:cover; background-position:center; background-repeat:no-repeat; background-attachment:fixed;
+}
+@media (max-width: 640px) {
+    .bg-blog-nutricion-root, .bg-blog-ciencia-root, .bg-blog-experiencias-root {
+        background-attachment: scroll;
+    }
+}

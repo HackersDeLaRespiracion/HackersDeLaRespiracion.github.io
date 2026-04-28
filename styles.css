@@ -419,11 +419,11 @@ footer a:hover { text-decoration: underline; }
 .bg-legal       { background-image: linear-gradient(rgba(247,244,238,0.50),rgba(247,244,238,0.58)), url("Images/fondo.png");            background-size:cover;background-position:center;background-repeat:no-repeat;background-attachment:fixed; }
 
 /* /en/ — rutas con ../ */
-.bg-en-home        { background-image: linear-gradient(rgba(247,244,238,0.50),rgba(247,244,238,0.58)), url("../Images/background.png");       background-size:cover;background-position:center;background-repeat:no-repeat;background-attachment:fixed; }
+.bg-en-home        { background-image: linear-gradient(rgba(247,244,238,0.50),rgba(247,244,238,0.58)), url("../Images/background.png"); /* Sustituir por background.png cuando esté lista */ background-size:cover;background-position:center;background-repeat:no-repeat;background-attachment:fixed; }
 .bg-en-science     { background-image: linear-gradient(rgba(247,244,238,0.50),rgba(247,244,238,0.58)), url("../Images/fondo-ciencia.png");     background-size:cover;background-position:center;background-repeat:no-repeat;background-attachment:fixed; }
 .bg-en-experiences { background-image: linear-gradient(rgba(247,244,238,0.50),rgba(247,244,238,0.58)), url("../Images/fondo-experiencia.png"); background-size:cover;background-position:center;background-repeat:no-repeat;background-attachment:fixed; }
 .bg-en-nutrition   { background-image: linear-gradient(rgba(247,244,238,0.50),rgba(247,244,238,0.58)), url("../Images/fondo-nutricion.png");   background-size:cover;background-position:center;background-repeat:no-repeat;background-attachment:fixed; }
-.bg-en-legal       { background-image: linear-gradient(rgba(247,244,238,0.50),rgba(247,244,238,0.58)), url("../Images/background.png");        background-size:cover;background-position:center;background-repeat:no-repeat;background-attachment:fixed; }
+.bg-en-legal       { background-image: linear-gradient(rgba(247,244,238,0.50),rgba(247,244,238,0.58)), url("../Images/background.png"); /* Sustituir por background.png cuando esté lista */ background-size:cover;background-position:center;background-repeat:no-repeat;background-attachment:fixed; }
 
 /* /Entradas_blog/ y /Blog_entries/ — rutas con ../ */
 .bg-blog-nutricion    { background-image: linear-gradient(rgba(247,244,238,0.50),rgba(247,244,238,0.58)), url("../Images/fondo-nutricion.png"); background-size:cover;background-position:center;background-repeat:no-repeat;background-attachment:fixed; }

@@ -308,7 +308,7 @@ td:first-child { font-weight: 600; color: var(--text); }
 .good-block li::before { content: '✓'; color: var(--sage); flex-shrink: 0; }
 
 /* ---- DISCLAIMER ---- */
-.disclaimer { background: #fff8f0; border-left: 3px solid var(--gold); border-radius: 0 var(--radius) var(--radius) 0; padding: 16px 20px; font-size: 0.84rem; color: var(--text-mid); line-height: 1.72; font-style: italic; }
+.disclaimer { background: #fff8f0; border-left: 3px solid var(--gold); border-radius: 0 var(--radius) var(--radius) 0; padding: 16px 20px; font-size: 0.84rem; color: var(--text-mid); line-height: 1.72; font-style: italic; max-width: 600px; margin: 0 auto;}
 
 /* ---- CONTACT GRID ---- */
 .contact-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px,1fr)); gap: 16px; }

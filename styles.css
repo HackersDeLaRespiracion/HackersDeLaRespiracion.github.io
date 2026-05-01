@@ -224,7 +224,7 @@ body {
     text-decoration: none; border: 1px solid;
     transition: all 0.18s; line-height: 1.4; white-space: nowrap;
 }
-.btn-action.amazon { color: var(--gold); border-color: rgba(201,146,78,0.30); background: rgba(201,146,78,0.06); }
+.btn-action.amazon { color: var(--terra); border-color: rgba(201,146,78,0.30); background: rgba(201,146,78,0.06); }
 .btn-action.amazon:hover { background: rgba(201,146,78,0.15); }
 .btn-action.reviews { color: var(--text-mid); border-color: var(--border); background: transparent; }
 .btn-action.reviews:hover { background: var(--bg-soft); color: var(--text); }

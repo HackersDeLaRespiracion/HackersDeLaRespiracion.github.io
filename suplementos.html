@@ -8,6 +8,53 @@
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Nunito+Sans:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="Images/icon.png" type="image/png">
+
+    <style>
+        /* Estilos específicos para la sección de acción de recetas */
+        .book-actions {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 60px 20px; /* Más espacio para que destaque */
+            margin-top: 20px;
+            width: 100%;
+        }
+
+        .btn-video-recetas {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            background-color: var(--sage); /* Color verde del tema */
+            color: white !important;
+            padding: 18px 36px;
+            border-radius: 50px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            font-size: 1.15rem;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-video-recetas:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+            filter: brightness(1.1);
+        }
+
+        .btn-video-recetas span {
+            font-size: 1.4rem;
+        }
+
+        /* Ajuste para el horario diario */
+        .schedule-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+    </style>
 </head>
 <body class="bg-nutricion" data-lang="es" data-alt-href="en/nutrition.html">
 <div class="page">
@@ -24,7 +71,7 @@
             <div class="lang-switch">
                 <a class="lang-btn" data-lang="es">ES</a>
                 <span class="lang-sep">·</span>
-                <a class="lang-btn" data-lang="en" href="#">EN</a>
+                <a class="lang-btn" data-lang="en" href="en/nutrition.html">EN</a>
             </div>
             <button class="nav-burger" onclick="toggleMenu()" aria-label="Menú">☰</button>
         </div>
@@ -36,9 +83,8 @@
             <h1 class="page-title">Porque, por ahora, <em>no sólo de aire vive</em> mi persona</h1>
             <p class="page-intro">
                 Mi enfoque parte de una idea sencilla: la alimentación debería ser la fuente
-                principal de nutrientes. En determinadas etapas, la dieta real no siempre cubre
-                todas las necesidades. En esos casos, algunos complementos pueden servir como
-                apoyo temporal.
+                principal de nutrientes. Siempre priorizo alimentos reales y ajusto
+                la suplementación según mis hábitos dietéticos.
             </p>
         </div>
     </section>
@@ -46,14 +92,10 @@
     <div class="content-wrap">
 
         <div class="disclaimer">
-            Esta lista no constituye una recomendación de compra ni de marcas. Simplemente recoge
-            los productos que utilizo de forma puntual. Siempre priorizo alimentos reales y ajusto
-            la suplementación según mis hábitos dietéticos y exposición solar.
+            Esta lista no constituye una recomendación médica. Simplemente recoge
+            los productos que utilizo de forma puntual.
         </div>
 
-        <!-- ======================================================
-             AGUA
-             ====================================================== -->
         <div class="section-head">
             <h2>El agua que bebemos</h2>
             <div class="section-line"></div>
@@ -61,174 +103,43 @@
 
         <div class="suppl-card">
             <div class="suppl-header">
-                <span class="suppl-name">Filtro de agua</span>
+                <span class="suppl-name">Filtro de agua (Bajo fregadero)</span>
             </div>
             <p class="suppl-body">
-                Antes de hablar de suplementos, creo que merece la pena hablar del agua. Vivo en Madrid, y el agua del grifo
-                es de bastante calidad, si bien contiene cloro y substancias en suspensión que prefiero evitar.
-		En otras zonas, puede contener ciertas cantidades de metales pesados, cal y otros residuos que, aunque
-                en niveles legalmente seguros, no son neutros a largo plazo para el organismo ni
-                para el sabor.
-                <br><br>
-                Tras estudiar sistemas de filtración por ósmosis inversa, valorar adquirir agua embotellada e incluso plantearme la compra
-		de un generador de agua Kangen, opté por este filtro que se instala
-                bajo el fregadero y filtra directamente en el punto de consumo. Elimina hasta el
-                99 % de contaminantes comunes —cloro, plomo, nitratos, microplásticos— y mejora
-                notablemente el sabor. Lo uso a diario tanto para beber como para cocinar.
-                <br><br>
-                A diferencia de los filtros de jarra, no requiere ir rellenando ni tiene
-                limitaciones de flujo importantes. La instalación es sencilla y el mantenimiento
-                se reduce a cambiar el cartucho periódicamente según el fabricante. En mi caso, una vez al año con el modelo RF10,
-		o cada 2 años con el modelo RF15 (sólo hay que sustituir los cartuchos filtrantes, que se pueden comprar por separado)
+                Opté por un sistema de filtración directa que elimina cloro, plomo y microplásticos. 
+                Es más cómodo que las jarras y mejora notablemente el sabor para beber y cocinar.
             </p>
             <div class="suppl-actions">
-                <a href="Entradas_blog/entrada_blog_omega_3.html" class="btn-action blog">
-                    📝 Por qué lo he elegido
-				<a href="https://amzn.to/4t0SDbY" class="suppl-link" target="_blank" rel="noopener">Ver en Amazon →</a>					
-                </a>
+                <a href="https://amzn.to/4t0SDbY" class="btn-action amazon" target="_blank">💊 Ver en Amazon</a>
             </div>
         </div>
 
-        <!-- ======================================================
-             SUPLEMENTOS
-             ====================================================== -->
         <div class="section-head">
-            <h2>Suplementos</h2>
+            <h2>Suplementos que utilizo</h2>
             <div class="section-line"></div>
         </div>
 
         <div class="suppl-card">
-            <div class="suppl-header">
-                <span class="suppl-name">Omega 3 (EPA/DHA)</span>
-<!--            <a href="https://amzn.to/4mLmKmm" class="suppl-link" target="_blank" rel="noopener">Ver en Amazon →</a> -->
-            </div>
-            <p class="suppl-body">
-                Lo utilizo cuando mi consumo de pescado azul (sardina, salmón, caballa) es bajo
-                o cuando aumento la ingesta de semillas ricas en otros ácidos grasos. Busco
-                formulaciones con presencia significativa de EPA y DHA, idealmente con control
-                de oxidación y pureza. En ayunas puede producir reflujo si se toma solo…
-            </p>
+            <div class="suppl-header"><span class="suppl-name">Omega 3 (EPA/DHA)</span></div>
+            <p class="suppl-body">Apoyo para cuando el consumo de pescado azul es bajo.</p>
             <div class="suppl-actions">
-                <a href="Entradas_blog/entrada_blog_omega_3.html" class="btn-action blog">
-                    📝 Por qué lo he elegido
-                <a href="https://amzn.to/4mLmKmm" class="btn-action amazon" target="_blank" rel="noopener">💊 Ver en Amazon</a>
-                </a>
+                <a href="https://amzn.to/4mLmKmm" class="btn-action amazon" target="_blank">💊 Ver en Amazon</a>
             </div>
         </div>
 
         <div class="suppl-card">
-            <div class="suppl-header">
-                <span class="suppl-name">Vitamina C</span>
-<!--            <a href="https://amzn.to/4cEEUBz" class="suppl-link" target="_blank" rel="noopener">Ver en Amazon →</a> -->
-            </div>
-            <p class="suppl-body">
-                La empleo como apoyo inmunitario y antioxidante, preferiblemente repartida en
-                varias tomas. Me resulta especialmente útil combinarla con alimentos ricos en
-                vitamina C natural (kiwi, cítricos, pimiento rojo, frutos rojos). Un gramo al
-                día repartido en dos o tres dosis facilita la absorción y reduce el riesgo de
-                cálculos renales. <em>Ojo: afecta a las analíticas de sangre.</em>
-            </p>
+            <div class="suppl-header"><span class="suppl-name">Vitamina D3 / K2</span></div>
+            <p class="suppl-body">Fundamental en meses de poca exposición solar. Tomar siempre con grasa.</p>
             <div class="suppl-actions">
-                <a href="Entradas_blog/entrada_blog_vitamina_c.html" class="btn-action blog">📝 Por qué lo he elegido</a>
-                <a href="https://amzn.to/4cEEUBz" class="btn-action amazon" target="_blank" rel="noopener">💊 Ver en Amazon</a>
+                <a href="https://amzn.to/3OzljuJ" class="btn-action amazon" target="_blank">💊 Ver en Amazon</a>
             </div>
         </div>
 
         <div class="suppl-card">
-            <div class="suppl-header">
-                <span class="suppl-name">Psyllium</span>
-<!--            <a href="https://amzn.to/4vPMNgc" class="suppl-link" target="_blank" rel="noopener">Ver en Amazon →</a> -->
-            </div>
-            <p class="suppl-body">
-                Fuente de fibra soluble con efecto prebiótico. Lo utilizo para acercarme a los
-                niveles recomendados de fibra diaria. Debe tomarse siempre con abundante agua
-                y separado de otros suplementos para evitar interferencias en la absorción de
-                minerales y vitaminas.
-            </p>
+            <div class="suppl-header"><span class="suppl-name">Magnesio (Citrato)</span></div>
+            <p class="suppl-body">Ayuda a la relajación muscular y a la calidad del sueño antes de dormir.</p>
             <div class="suppl-actions">
-                <a href="Entradas_blog/entrada_blog_psyllium.html" class="btn-action blog">📝 Por qué lo he elegido</a>
-                <a href="https://amzn.to/4vPMNgc" class="btn-action amazon" target="_blank" rel="noopener">💊 Ver en Amazon</a>
-            </div>
-        </div>
-
-        <div class="suppl-card">
-            <div class="suppl-header">
-                <span class="suppl-name">Selenio</span>
-<!--            <a href="https://amzn.to/4sOHJ9f" class="suppl-link" target="_blank" rel="noopener">Ver en Amazon →</a> -->
-            </div>
-            <p class="suppl-body">
-                Mineral implicado en múltiples funciones antioxidantes e inmunitarias.
-                <em>Ojo: el exceso suele detectarse por uñas quebradizas.</em>
-                No prolongaría su uso más allá de 15–30 días por trimestre.
-            </p>
-            <div class="suppl-actions">
-                <a href="Entradas_blog/entrada_blog_selenio.html" class="btn-action blog">📝 Por qué lo he elegido</a>
-                <a href="https://amzn.to/4sOHJ9f" class="btn-action amazon" target="_blank" rel="noopener">💊 Ver en Amazon</a>
-            </div>
-        </div>
-
-        <div class="suppl-card">
-            <div class="suppl-header">
-                <span class="suppl-name">Zinc (Bisglicinato)</span>
-<!--            <a href="https://amzn.to/4cS2I5k" class="suppl-link" target="_blank" rel="noopener">Ver en Amazon →</a> -->
-            </div>
-            <p class="suppl-body">
-                Forma bien tolerada y con buena biodisponibilidad. Lo utilizo como apoyo del
-                sistema inmune. No prolongar consumo más de 15 días cada 3 meses sin revisar
-                niveles de cobre y hierro.
-            </p>
-            <div class="suppl-actions">
-                <a href="Entradas_blog/entrada_blog_zinc.html" class="btn-action blog">📝 Por qué lo he elegido</a>
-                <a href="https://amzn.to/4cS2I5k" class="btn-action amazon" target="_blank" rel="noopener">💊 Ver en Amazon</a>
-            </div>
-        </div>
-
-        <div class="suppl-card">
-            <div class="suppl-header">
-                <span class="suppl-name">Potasio (Citrato)</span>
-<!--            <a href="https://amzn.to/4tud9mm" class="suppl-link" target="_blank" rel="noopener">Ver en Amazon →</a> -->
-            </div>
-            <p class="suppl-body">
-                Interesante en dietas con exceso de sodio y bajo consumo de frutas y verduras.
-                Prefiero priorizar su obtención mediante alimentos frescos y no abusar del sodio.
-            </p>
-            <div class="suppl-actions">
-                <a href="Entradas_blog/entrada_blog_potasio.html" class="btn-action blog">📝 Por qué lo he elegido</a>
-                <a href="https://amzn.to/4tud9mm" class="btn-action amazon" target="_blank" rel="noopener">💊 Ver en Amazon</a>
-            </div>
-        </div>
-
-        <div class="suppl-card">
-            <div class="suppl-header">
-                <span class="suppl-name">Vitamina D3 / K2</span>
-                <!--ref="https://amzn.to/3OzljuJ" class="suppl-link" target="_blank" rel="noopener">Ver en Amazon →</a> -->
-            </div>
-            <p class="suppl-body">
-                Especialmente útil cuando la exposición solar es limitada. La tomo junto con
-                alimentos que contengan grasa para mejorar su absorción. Tomarlo junto al
-                Omega 3 tiene sinergias antiinflamatorias.
-                <em>Mejor momento: desayuno con grasa.</em>
-            </p>
-            <div class="suppl-actions">
-                <a href="Entradas_blog/entrada_blog_vitamina_d.html" class="btn-action blog">📝 Por qué lo he elegido</a>
-                <a href="https://amzn.to/3OzljuJ" class="btn-action amazon" target="_blank" rel="noopener">💊 Ver en Amazon</a>
-            </div>
-        </div>
-
-        <div class="suppl-card">
-            <div class="suppl-header">
-                <span class="suppl-name">Magnesio (Citrato)</span>
-<!--            <a href="https://amzn.to/4txChZN" class="suppl-link" target="_blank" rel="noopener">Ver en Amazon →</a> -->
-            </div>
-            <p class="suppl-body">
-                Mineral frecuentemente insuficiente en la dieta. Lo utilizo principalmente para
-                favorecer la relajación muscular y la calidad del sueño. En forma de citrato se
-                absorbe razonablemente bien y es bastante más económico que el malato o el
-                bisglicinato.
-            </p>
-            <div class="suppl-actions">
-                <a href="Entradas_blog/entrada_blog_magnesio.html" class="btn-action blog">📝 Por qué lo he elegido</a>
-                <a href="https://amzn.to/4txChZN" class="btn-action amazon" target="_blank" rel="noopener">💊 Ver en Amazon</a>
+                <a href="https://amzn.to/4txChZN" class="btn-action amazon" target="_blank">💊 Ver en Amazon</a>
             </div>
         </div>
 
@@ -239,50 +150,22 @@
 
         <div class="schedule-grid">
             <div class="schedule-slot">
-                <div class="slot-time">☀ Desayuno (con grasa)</div>
+                <div class="slot-time">☀ Desayuno</div>
                 <ul class="slot-items">
                     <li>Vitamina D3 + K2</li>
                     <li>Omega-3</li>
-                    <li>Vitamina C</li>
                 </ul>
             </div>
             <div class="schedule-slot">
-                <div class="slot-time">☕ Media mañana</div>
+                <div class="slot-time">💤 Noche</div>
                 <ul class="slot-items">
-                    <li>Vitamina C</li>
-                </ul>
-            </div>
-            <div class="schedule-slot">
-                <div class="slot-time">🍽 Comida</div>
-                <ul class="slot-items">
-                    <li>Selenio</li>
-                    <li>Zinc (NO con magnesio, calcio o fibra)</li>
-                    <li>Vitamina C</li>
-                </ul>
-            </div>
-            <div class="schedule-slot">
-                <div class="slot-time">🌿 Media tarde</div>
-                <ul class="slot-items">
-                    <li>Psyllium (solo con agua, separado 2–3 h de todo lo demás)</li>
-                </ul>
-            </div>
-            <div class="schedule-slot">
-                <div class="slot-time">🌙 Cena</div>
-                <ul class="slot-items">
-                    <li>Citrato de Potasio</li>
-                    <li>Omega-3</li>
-                </ul>
-            </div>
-            <div class="schedule-slot">
-                <div class="slot-time">💤 Antes de dormir</div>
-                <ul class="slot-items">
-                    <li>Magnesio (mejor absorción, ayuda al sueño)</li>
+                    <li>Magnesio</li>
                 </ul>
             </div>
         </div>
 
         <div class="section-head">
-            <h2>Compatibilidades y sinergias</h2>
+            <h2>Compatibilidades</h2>
             <div class="section-line"></div>
         </div>
 
@@ -290,32 +173,29 @@
             <div class="compat-block bad-block">
                 <div class="compat-title bad">No tomar juntos</div>
                 <ul>
-                    <li>Zinc + Magnesio (compiten)</li>
-                    <li>Zinc + Hierro / Calcio</li>
-                    <li>Psyllium + cualquier suplemento (reduce absorción)</li>
-                    <li>Magnesio + Psyllium (reduce biodisponibilidad)</li>
-                    <li>Vitamina C alta dosis + Zinc (puede irritar GI)</li>
+                    <li>Zinc + Magnesio</li>
+                    <li>Psyllium + otros suplementos</li>
                 </ul>
             </div>
             <div class="compat-block good-block">
                 <div class="compat-title good">Sinergias útiles</div>
                 <ul>
-                    <li>Vitamina D + grasa (aguacate, aceite de oliva, huevos)</li>
-                    <li>Omega-3 + comida grasa (mejor absorción)</li>
-                    <li>Magnesio + cena ligera → mejora el sueño</li>
-                    <li>Vitamina C + polifenoles (kiwi, pimiento)</li>
-                    <li>Zinc + proteína animal (mejor absorción)</li>
+                    <li>Vitamina D + Grasas saludables</li>
+                    <li>Magnesio + Cena ligera</li>
                 </ul>
             </div>
         </div>
 
-    </div><!-- /content-wrap -->
-	<div class="book-actions">
-		<a href="recetas.html" class="btn-action blog">🎥 Ver recetas en vídeo</a>
-	</div>
+    </div><div class="book-actions">
+        <a href="recetas.html" class="btn-video-recetas">
+            <span>🎥</span> Ver recetas en vídeo
+        </a>
+    </div>
+
     <div id="footer"></div>
     <script src="footer.js"></script>
 </div>
+
 <script src="nav.js"></script>
 </body>
 </html>

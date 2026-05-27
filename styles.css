@@ -68,17 +68,6 @@ body {
     padding: 4px 8px; flex-shrink: 0;
 }
 
-/* ---- LANGUAGE SWITCH ---- */
-.lang-switch { display: flex; align-items: center; gap: 4px; flex-shrink: 0; }
-.lang-sep { color: var(--text-dim); font-size: 0.75rem; user-select: none; }
-.lang-btn {
-    font-size: 0.75rem; font-weight: 700; letter-spacing: 0.5px;
-    color: var(--text-dim); text-decoration: none;
-    padding: 4px 9px; border-radius: 12px; transition: all 0.18s;
-}
-.lang-btn:hover { color: var(--sage); background: var(--sage-lt); }
-.lang-btn.active { color: var(--sage); background: var(--sage-lt); cursor: default; pointer-events: none; }
-
 /* ---- HERO ---- */
 .hero { padding: 96px 32px 80px; text-align: center; }
 .hero-inner {
@@ -420,7 +409,6 @@ footer a:hover { text-decoration: underline; }
     .btn-action { font-size: 0.72rem; padding: 5px 11px; }
 
     .bg-home, .bg-ciencia, .bg-experiencias, .bg-nutricion, .bg-legal,
-    .bg-en-home, .bg-en-science, .bg-en-experiences, .bg-en-nutrition, .bg-en-legal,
     .bg-blog-nutricion, .bg-blog-en-nutrition { background-attachment: scroll; }
     .why-section { padding: 0 16px 28px; }
 }
@@ -433,13 +421,6 @@ footer a:hover { text-decoration: underline; }
 .bg-experiencias{ background-image: linear-gradient(rgba(247,244,238,0.50),rgba(247,244,238,0.58)), url("Images/fondo-experiencia.png");background-size:cover;background-position:center;background-repeat:no-repeat;background-attachment:fixed; }
 .bg-nutricion   { background-image: linear-gradient(rgba(247,244,238,0.50),rgba(247,244,238,0.58)), url("Images/fondo-nutricion.png");  background-size:cover;background-position:center;background-repeat:no-repeat;background-attachment:fixed; }
 .bg-legal       { background-image: linear-gradient(rgba(247,244,238,0.50),rgba(247,244,238,0.58)), url("Images/fondo.png");            background-size:cover;background-position:center;background-repeat:no-repeat;background-attachment:fixed; }
-
-/* /en/ — rutas con ../ */
-.bg-en-home        { background-image: linear-gradient(rgba(247,244,238,0.50),rgba(247,244,238,0.58)), url("../Images/background.png"); /* Sustituir por background.png cuando esté lista */ background-size:cover;background-position:center;background-repeat:no-repeat;background-attachment:fixed; }
-.bg-en-science     { background-image: linear-gradient(rgba(247,244,238,0.50),rgba(247,244,238,0.58)), url("../Images/fondo-ciencia.png");     background-size:cover;background-position:center;background-repeat:no-repeat;background-attachment:fixed; }
-.bg-en-experiences { background-image: linear-gradient(rgba(247,244,238,0.50),rgba(247,244,238,0.58)), url("../Images/fondo-experiencia.png"); background-size:cover;background-position:center;background-repeat:no-repeat;background-attachment:fixed; }
-.bg-en-nutrition   { background-image: linear-gradient(rgba(247,244,238,0.50),rgba(247,244,238,0.58)), url("../Images/fondo-nutricion.png");   background-size:cover;background-position:center;background-repeat:no-repeat;background-attachment:fixed; }
-.bg-en-legal       { background-image: linear-gradient(rgba(247,244,238,0.50),rgba(247,244,238,0.58)), url("../Images/background.png"); /* Sustituir por background.png cuando esté lista */ background-size:cover;background-position:center;background-repeat:no-repeat;background-attachment:fixed; }
 
 /* /Entradas_blog/ y /Blog_entries/ — rutas con ../ */
 .bg-blog-nutricion    { background-image: linear-gradient(rgba(247,244,238,0.50),rgba(247,244,238,0.58)), url("../Images/fondo-nutricion.png"); background-size:cover;background-position:center;background-repeat:no-repeat;background-attachment:fixed; }

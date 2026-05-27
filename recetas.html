@@ -329,7 +329,111 @@
                     </div>
                 </div>
             </div>
-
+			
+          <div class="recipe-card" id="card-receta4">
+                <div class="video-wrap">
+                    <video id="video4" preload="metadata" playsinline>
+                        <source src="/Videos/Helado-fresa.mp4" type="video/mp4">
+                        Tu navegador no soporta la reproducción de vídeo HTML5.
+                    </video>
+                </div>
+                <div class="video-controls">
+                    <div class="progress-wrap">
+                        <input type="range" class="progress-bar" id="progress4" min="0" max="100" value="0">
+                        <span class="time-label" id="time4">0:00 / 0:00</span>
+                    </div>
+                    <div class="controls-row">
+                        <button class="ctrl-btn" id="play4" onclick="togglePlay('video4','play4')">▶ Reproducir</button>
+                        <button class="ctrl-btn" onclick="setSpeed('video4', 0.75, this)">0.75×</button>
+                        <button class="ctrl-btn active" onclick="setSpeed('video4', 1, this)">1×</button>
+                        <button class="ctrl-btn" onclick="setSpeed('video4', 1.5, this)">1.5×</button>
+                        <button class="ctrl-btn" onclick="setSpeed('video4', 2, this)">2×</button>
+                        <div class="volume-wrap">
+                            <span class="volume-icon" onclick="toggleMute('video4', this)">🔊</span>
+                            <input type="range" class="volume-slider" min="0" max="1" step="0.05" value="1" oninput="setVolume('video4', this.value)">
+                        </div>
+                    </div>
+                </div>
+                <div class="recipe-info">
+                    <div class="recipe-title">Helado de fresa</div>
+                    <p class="recipe-desc">Para 1kg de helado, aproximadamente, utiliza 650g de fresas, 250g de yogur griego (2 yogures), 100ml de nata líquida y 3 cdas de miel. Las fresas son una de las frutas que más pesticidas acumulan, así que las lavo por inmersión en agua con un buen chorro de vinagre de manzana durante 5-10 minutos, y después de aclararlas las vuelvo a sumergir en agua con bicarbonato sódico por otros 10 minutos. De este modo la mayor parte de los pesticidas se disuelven.</p>
+                    <div class="recipe-tags">
+                        <span class="recipe-tag">Sin Gluten</span>
+                        <span class="recipe-tag">Elaboracion 30'</span>
+                        <span class="recipe-tag">Total 2 días</span>
+                    </div>
+                </div>
+            </div>
+						
+          <div class="recipe-card" id="card-receta5">
+                <div class="video-wrap">
+                    <video id="video5" preload="metadata" playsinline>
+                        <source src="/Videos/Pizza.mp4" type="video/mp4">
+                        Tu navegador no soporta la reproducción de vídeo HTML5.
+                    </video>
+                </div>
+                <div class="video-controls">
+                    <div class="progress-wrap">
+                        <input type="range" class="progress-bar" id="progress5" min="0" max="100" value="0">
+                        <span class="time-label" id="time5">0:00 / 0:00</span>
+                    </div>
+                    <div class="controls-row">
+                        <button class="ctrl-btn" id="play5" onclick="togglePlay('video5','play5')">▶ Reproducir</button>
+                        <button class="ctrl-btn" onclick="setSpeed('video5', 0.75, this)">0.75×</button>
+                        <button class="ctrl-btn active" onclick="setSpeed('video5', 1, this)">1×</button>
+                        <button class="ctrl-btn" onclick="setSpeed('video5', 1.5, this)">1.5×</button>
+                        <button class="ctrl-btn" onclick="setSpeed('video5', 2, this)">2×</button>
+                        <div class="volume-wrap">
+                            <span class="volume-icon" onclick="toggleMute('video5', this)">🔊</span>
+                            <input type="range" class="volume-slider" min="0" max="1" step="0.05" value="1" oninput="setVolume('video5', this.value)">
+                        </div>
+                    </div>
+                </div>
+                <div class="recipe-info">
+                    <div class="recipe-title">Pizza</div>
+                    <p class="recipe-desc">Para 4 no muy comilones, utiliza 300g de harina panadera, 2 cda de aceite de oliva virgen, 1 cda de masa madre (¿masa qué? Otro día te cuento, si es eso lo que has pensado), o 2-3 g de levadura seca panadera, 150g de agua mineral (o, al menos, que no tenga cloro. Puedes ver el filtro de agua que tengo en la sección de Nutrición), 1 cdta de azucar panela, queso rallado y especias a gusto. Si puedes permitírtelo, cuida que la harina sea de trigo completo, con el endospermo. A diferencia de la hariana integral, no tiene el salvado. Y a diferencia de las harinas comerciales, mantiene el endospermo, que le confiere valores nutricionales y saciantes mayores.</p>
+                    <div class="recipe-tags">
+                        <span class="recipe-tag">Tiene Gluten</span>
+                        <span class="recipe-tag">Elaboracion 45'</span>
+                        <span class="recipe-tag">Total 2 horas</span>
+                    </div>
+                </div>
+            </div>
+									
+          <div class="recipe-card" id="card-receta6">
+                <div class="video-wrap">
+                    <video id="video5" preload="metadata" playsinline>
+                        <source src="/Videos/Chocolatinas-almendras.mp4" type="video/mp4">
+                        Tu navegador no soporta la reproducción de vídeo HTML5.
+                    </video>
+                </div>
+                <div class="video-controls">
+                    <div class="progress-wrap">
+                        <input type="range" class="progress-bar" id="progress6" min="0" max="100" value="0">
+                        <span class="time-label" id="time6">0:00 / 0:00</span>
+                    </div>
+                    <div class="controls-row">
+                        <button class="ctrl-btn" id="play6" onclick="togglePlay('video6','play6')">▶ Reproducir</button>
+                        <button class="ctrl-btn" onclick="setSpeed('video6', 0.75, this)">0.75×</button>
+                        <button class="ctrl-btn active" onclick="setSpeed('video6', 1, this)">1×</button>
+                        <button class="ctrl-btn" onclick="setSpeed('video6', 1.5, this)">1.5×</button>
+                        <button class="ctrl-btn" onclick="setSpeed('video6', 2, this)">2×</button>
+                        <div class="volume-wrap">
+                            <span class="volume-icon" onclick="toggleMute('video6', this)">🔊</span>
+                            <input type="range" class="volume-slider" min="0" max="1" step="0.05" value="1" oninput="setVolume('video6', this.value)">
+                        </div>
+                    </div>
+                </div>
+                <div class="recipe-info">
+                    <div class="recipe-title">Chocolatinas de almendras</div>
+                    <p class="recipe-desc">Para 12 unidades, "potentes", utiliza 4 cda de aceite de coco, 1 cda con colmo de miel, 4 cda de cacao en polvo y 200g de almendras troceadas y tostadas. Las almendras recién tostadas ayudan a deshacerse el aceite de coco.</p>
+                    <div class="recipe-tags">
+                        <span class="recipe-tag">Tiene Gluten</span>
+                        <span class="recipe-tag">Elaboracion 15'</span>
+                        <span class="recipe-tag">Total 1,5 horas</span>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div class="disclaimer">

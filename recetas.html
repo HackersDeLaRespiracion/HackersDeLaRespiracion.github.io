@@ -429,6 +429,40 @@
                     </div>
                 </div>
             </div>
+			          <div class="recipe-card" id="card-receta7">
+                <div class="video-wrap">
+                    <video id="video7" preload="metadata" playsinline>
+                        <source src="/Videos/Tartar_salmon.mp4" type="video/mp4">
+                        Tu navegador no soporta la reproducción de vídeo HTML5.
+                    </video>
+                </div>
+                <div class="video-controls">
+                    <div class="progress-wrap">
+                        <input type="range" class="progress-bar" id="progress7" min="0" max="100" value="0">
+                        <span class="time-label" id="time7">0:00 / 0:00</span>
+                    </div>
+                    <div class="controls-row">
+                        <button class="ctrl-btn" id="play7" onclick="togglePlay('video7','play7')">▶ Reproducir</button>
+                        <button class="ctrl-btn" onclick="setSpeed('video7', 0.75, this)">0.75×</button>
+                        <button class="ctrl-btn active" onclick="setSpeed('video7', 1, this)">1×</button>
+                        <button class="ctrl-btn" onclick="setSpeed('video7', 1.5, this)">1.5×</button>
+                        <button class="ctrl-btn" onclick="setSpeed('video7', 2, this)">2×</button>
+                        <div class="volume-wrap">
+                            <span class="volume-icon" onclick="toggleMute('video7', this)">🔊</span>
+                            <input type="range" class="volume-slider" min="0" max="1" step="0.05" value="1" oninput="setVolume('video7', this.value)">
+                        </div>
+                    </div>
+                </div>
+                <div class="recipe-info">
+                    <div class="recipe-title">Tartar de salmón</div>
+                    <p class="recipe-desc">Para 3 comensales, utiliza 400g de salmón (previamente congelado al menos 72h a -20ºC), 3 cda de salsa de soja, 1 cdta de mostaza Dijon, 1 cda aceite de oliva virgen, zumo de 1/2 lima, 1/2 cebolla, 1cda de alcaparras, 1 aguacate maduro, 200g arroz integral (remoja y cambia agua varias veces durante al menos 1h, preferiblemente 4-8h), 1 cabeza de ajo y 2 cdas más de aceite.</p>
+                    <div class="recipe-tags">
+                        <span class="recipe-tag">Sin Gluten</span>
+                        <span class="recipe-tag">Elaboracion 15'</span>
+                        <span class="recipe-tag">Total 1,5-8 horas</span>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div class="disclaimer">

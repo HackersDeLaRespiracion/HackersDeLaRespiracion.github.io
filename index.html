@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hackers de la Respiración</title>
+    <title>Respiración para la ansiedad, el estrés y el foco mental | Hackers de la Respiración</title>
+    <meta name="description" content="Ejercicios de respiración, neurociencia aplicada y protocolos prácticos para dormir mejor, frenar la ansiedad y recuperar el foco. Sin postureo ni misticismos.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Nunito+Sans:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
@@ -23,25 +24,42 @@
             <button class="nav-burger" onclick="toggleMenu()" aria-label="Menú">☰</button>
         </div>
     </nav>
+
+    <!-- ===================== HERO ===================== -->
     <section class="hero">
         <div class="hero-inner">
-<!--            <p class="hero-eyebrow">David García-Pozuelo Ramos</p> -->
-            <h1 class="hero-title">Hackers de la respiración</h1>
-            <p class="hero-subtitle">¡No es yoga! &nbsp;O, al menos, no sólo es yoga</p>
+            <p class="hero-eyebrow">Respiración · Ansiedad · Estrés · Foco mental</p>
+            <h1 class="hero-title">Respiración para la ansiedad, el estrés y el foco mental</h1>
+            <p class="hero-subtitle">Sin postureo ni misticismos: solo fisiología que funciona</p>
             <div class="hero-divider"></div>
-            <p class="hero-desc">Una guía práctica, respaldada por la neurociencia, para recuperar el superpoder más olvidado que tienes: tu respiración.</p>
+            <p class="hero-desc">
+                Ejercicios de respiración, neurociencia aplicada y protocolos prácticos para el día a día.
+                Aprende a usar tu herramienta más infravalorada para dormir mejor, frenar picos de
+                ansiedad y recuperar la concentración.
+            </p>
             <div class="book-btns">
-                <a href="https://amzn.to/4cwTSJZ" class="btn-book" target="_blank">📖 Leer en castellano</a>
+                <a href="https://amzn.to/4cwTSJZ" class="btn-book" target="_blank">📖 Quiero el método completo (libro en Amazon)</a>
                 <a href="https://amzn.to/4sUPJ8Z" class="btn-book secondary" target="_blank">📖 Read in English</a>
                 <a href="https://amzn.to/4t57CSr" class="btn-book secondary" target="_blank">👤 Sobre el autor</a>
             </div>
-            <p class="announce">Próximamente: La comunidad definitiva de Biohacking.</p>
+            <a href="#empieza" class="scroll-cue">↓ Empieza por aquí</a>
         </div>
         <div class="disclaimer">
             ⚠️ Esta web está actualmente en desarrollo. Mi intención es crear un espacio abierto de intercambio de ideas útiles para el día a día relacionadas con la respiración, la fisiología y el bienestar. El contenido puede ampliarse, modificarse o corregirse con el tiempo.
         </div>
     </section>
-    <div class="book-reviews-section">
+
+    <!-- ===================== PRUEBA SOCIAL (RESEÑAS) — justo después del hero ===================== -->
+    <div class="book-reviews-section" id="empieza">
+        <div class="social-proof-badge">
+            <span class="badge-stars">★★★★★</span>
+            <span class="badge-text">Valorado con 5 estrellas por sus primeros lectores en Amazon</span>
+        </div>
+        <blockquote class="featured-testimonial">
+            "Este libro ofrece lo que promete y más. Explica con claridad, desde la neurociencia,
+            el proceso respiratorio y cómo sacarle el máximo partido."
+            <cite>— Angel Garcia, reseña verificada en Amazon</cite>
+        </blockquote>
         <div class="book-reviews-head">
             <h2>Lo que dicen los lectores</h2>
             <div class="book-reviews-line"></div>
@@ -53,7 +71,7 @@
                 <div class="review-text">La lectura es rápida. No se anda por las ramas. Lleva la información necesaria, y unas "recetas" de aplicación que me han resultado tan sencillas como eficaces. Totalmente recomendado.</div>
                 <div class="review-meta">SV40 · 8 de febrero de 2026</div>
             </div>
-	    <div class="review-card">
+            <div class="review-card">
                 <div class="review-stars">★★★★★</div>
                 <div class="review-title">Recomendable 100%</div>
                 <div class="review-text">Es un libro que merece mucho la pena.
@@ -83,10 +101,121 @@ Muy recomendable.
 		</div>
                 <div class="review-meta">Noemi L. · 25 de enero de 2026</div>
             </div>
-
         </div>
         <div class="reviews-amazon-link">
             <a href="https://amzn.to/4cwTSJZ#customerReviews" class="btn-action amazon" target="_blank" rel="noopener">⭐ Ver todas las reseñas en Amazon →</a>
+        </div>
+    </div>
+
+    <!-- ===================== LEAD MAGNET (ARRIBA) ===================== -->
+    <div class="lead-magnet" id="guia-gratis">
+        <div class="lead-magnet-inner">
+            <div class="lm-icon">🎁</div>
+            <h2 class="lm-title">Guía rápida gratuita de 5 minutos</h2>
+            <p class="lm-desc">
+                <strong>3 ejercicios de respiración para bajar el estrés en menos de 2 minutos.</strong>
+                Te la enviamos directamente a tu email, lista para guardar y usar cuando la necesites.
+            </p>
+            <!--
+                ⚠️ CONFIGURACIÓN CON GOOGLE FORMS (gratis, sin servidor):
+                1. Sustituye TU_FORM_ID_GUIA por el ID de tu Google Form (parte entre /d/e/ y /viewform).
+                2. Sustituye TU_ENTRY_ID_EMAIL_GUIA por el entry.XXXXXXX que identificaste con el
+                   truco de "Obtener enlace con campos completados".
+                3. El formulario se envía en segundo plano a Google (vía el iframe oculto
+                   "hidden_iframe_guia") y, cuando Google confirma la recepción, el script redirige
+                   automáticamente a gracias.html. El usuario nunca ve la interfaz de Google.
+                4. Para que además llegue un email automático con el PDF adjunto, configura el
+                   Apps Script que te indico en la documentación (vinculado a la hoja de respuestas
+                   de este mismo formulario).
+            -->
+            <form class="lm-form" action="https://docs.google.com/forms/d/e/TU_FORM_ID_GUIA/formResponse" method="POST" target="hidden_iframe_guia" onsubmit="window.guiaEnviada = true;">
+                <input type="email" name="entry.TU_ENTRY_ID_EMAIL_GUIA" class="lm-input" placeholder="Tu correo electrónico" required aria-label="Correo electrónico">
+                <button type="submit" class="lm-submit">Quiero la guía gratis →</button>
+                <label class="lm-consent">
+                    <input type="checkbox" required>
+                    Acepto recibir la guía por email y la <a href="privacidad.html">política de privacidad</a>.
+                </label>
+            </form>
+        </div>
+    </div>
+
+    <!-- ===================== PARA QUIÉN ES ESTA WEB ===================== -->
+    <div class="who-section">
+        <div class="book-reviews-head">
+            <h2>¿Para quién es esta web?</h2>
+            <div class="book-reviews-line"></div>
+        </div>
+        <div class="who-grid">
+            <div class="who-item"><span class="who-emoji">😴</span><p>Si te cuesta conciliar el sueño o duermes mal y te despiertas cansado.</p></div>
+            <div class="who-item"><span class="who-emoji">💓</span><p>Si sufres ansiedad, picos de estrés o algún ataque de pánico ocasional.</p></div>
+            <div class="who-item"><span class="who-emoji">💻</span><p>Si pasas muchas horas frente a una pantalla y notas tensión o niebla mental.</p></div>
+            <div class="who-item"><span class="who-emoji">🏃</span><p>Si haces deporte y quieres mejorar tu rendimiento y tu recuperación.</p></div>
+        </div>
+    </div>
+
+    <!-- ===================== QUÉ APRENDERÁS EN EL LIBRO ===================== -->
+    <div class="benefits-section">
+        <div class="book-reviews-head">
+            <h2>Qué aprenderás en el libro (en 5 minutos)</h2>
+            <div class="book-reviews-line"></div>
+        </div>
+        <ul class="benefits-list">
+            <li><span class="benefit-check">✓</span> Cómo identificar si respiras mal sin darte cuenta, y por qué eso te está pasando factura.</li>
+            <li><span class="benefit-check">✓</span> Un protocolo de 21 días para reprogramar tu patrón respiratorio de fondo.</li>
+            <li><span class="benefit-check">✓</span> Técnicas concretas para frenar un pico de ansiedad en menos de 2 minutos.</li>
+            <li><span class="benefit-check">✓</span> Por qué el ritmo cardíaco y el sistema nervioso autónomo dependen de cómo respiras.</li>
+            <li><span class="benefit-check">✓</span> Ejercicios para mejorar el rendimiento deportivo y la recuperación física.</li>
+            <li><span class="benefit-check">✓</span> Cómo explicar estos principios a los más jóvenes de la casa, de forma sencilla.</li>
+        </ul>
+        <div style="text-align:center; margin-top: 8px;">
+            <a href="https://amzn.to/4cwTSJZ" class="btn-book" target="_blank">📖 Quiero el método completo (libro en Amazon)</a>
+        </div>
+    </div>
+
+    <!-- ===================== COMUNIDAD (PRÓXIMAMENTE) ===================== -->
+    <div class="community-section" id="comunidad">
+        <div class="book-reviews-head">
+            <h2>La comunidad de Hackers de la Respiración</h2>
+            <div class="book-reviews-line"></div>
+        </div>
+        <p class="community-desc">
+            Próximamente: <strong>sesiones mensuales en directo + retos de respiración de 7 días</strong>,
+            para practicar acompañado y no perder la constancia. Apúntate a la lista de espera y
+            serás de los primeros en enterarte cuando abra.
+        </p>
+        <!--
+            ⚠️ CONFIGURACIÓN CON GOOGLE FORMS:
+            Sustituye TU_FORM_ID_COMUNIDAD y TU_ENTRY_ID_EMAIL_COMUNIDAD igual que en el formulario
+            de la guía, pero usando un segundo Google Form independiente ("Lista de espera —
+            Comunidad"). Este formulario no redirige a gracias.html: al enviarse, sustituye su
+            propio contenido por un mensaje de agradecimiento inline (ver community-thanks abajo),
+            para que la persona se quede navegando la home en vez de salir de ella.
+        -->
+        <form class="lm-form community-form" id="community-form" action="https://docs.google.com/forms/d/e/TU_FORM_ID_COMUNIDAD/formResponse" method="POST" target="hidden_iframe_comunidad" onsubmit="window.comunidadEnviada = true;">
+            <input type="email" name="entry.TU_ENTRY_ID_EMAIL_COMUNIDAD" class="lm-input" placeholder="Tu correo electrónico" required aria-label="Correo electrónico">
+            <button type="submit" class="lm-submit">Apuntarme a la lista de espera →</button>
+        </form>
+        <p class="community-thanks" id="community-thanks" style="display:none;">
+            ✓ ¡Apuntado! Te avisaremos por email en cuanto abra la comunidad.
+        </p>
+    </div>
+
+    <!-- ===================== SOBRE EL AUTOR ===================== -->
+    <div class="author-section">
+        <div class="author-card">
+            <!-- Sustituye este div por <img src="Images/autor.jpg" class="author-photo" alt="David García-Pozuelo Ramos"> cuando tengas la foto -->
+            <div class="author-photo-placeholder" aria-hidden="true">DG</div>
+            <div class="author-info">
+                <h2 class="author-name">David García-Pozuelo Ramos</h2>
+                <p class="author-bio">
+                    Autor de <em>Hackers de la Respiración: ¡No es yoga!</em>. Llevo años investigando,
+                    por curiosidad personal, cómo la respiración, la fisiología y el sistema nervioso se
+                    entrelazan con el bienestar del día a día. Esta web es el cuaderno abierto de ese proceso:
+                    ni gurú, ni dogma, solo ganas de compartir lo que funciona y de seguir aprendiendo de quien
+                    sepa más que yo.
+                </p>
+                <a href="https://amzn.to/4t57CSr" class="link-book" target="_blank">Ver perfil de autor en Amazon →</a>
+            </div>
         </div>
     </div>
 
@@ -105,10 +234,41 @@ Muy recomendable.
     </div>
 
     <div class="section-cards">
-        <a href="ciencia.html" class="section-card"><div class="sc-icon">🔬</div><div class="sc-title">Ciencia</div><p class="sc-desc">Libros para profundizar en la fisiología y neurociencia de la respiración.</p><span class="sc-arrow">Explorar →</span></a>
+        <a href="ciencia.html" class="section-card"><div class="sc-icon">🔬</div><div class="sc-title">Ciencia</div><p class="sc-desc">Libros y artículos para profundizar en la fisiología y neurociencia de la respiración.</p><span class="sc-arrow">Explorar →</span></a>
         <a href="experiencias.html" class="section-card"><div class="sc-icon">🌊</div><div class="sc-title">Experiencias</div><p class="sc-desc">Prácticas vivenciales y respiración emocional para sentir antes de entender.</p><span class="sc-arrow">Explorar →</span></a>
         <a href="suplementos.html" class="section-card"><div class="sc-icon">🌿</div><div class="sc-title">Nutrición</div><p class="sc-desc">Suplementación consciente como apoyo puntual a una dieta de alimentos reales.</p><span class="sc-arrow">Explorar →</span></a>
     </div>
+
+    <!-- ===================== LEAD MAGNET (AL FINAL) ===================== -->
+    <div class="lead-magnet lead-magnet-bottom">
+        <div class="lead-magnet-inner">
+            <div class="lm-icon">🎁</div>
+            <h2 class="lm-title">¿Aún no tienes tu guía gratuita?</h2>
+            <p class="lm-desc">
+                <strong>3 ejercicios de respiración para bajar el estrés en menos de 2 minutos.</strong>
+                Llévatela gratis a tu email antes de irte.
+            </p>
+            <!-- Mismo formulario y mismos datos que el lead magnet de arriba: usa el mismo Google Form. -->
+            <form class="lm-form" action="https://docs.google.com/forms/d/e/TU_FORM_ID_GUIA/formResponse" method="POST" target="hidden_iframe_guia" onsubmit="window.guiaEnviada = true;">
+                <input type="email" name="entry.TU_ENTRY_ID_EMAIL_GUIA" class="lm-input" placeholder="Tu correo electrónico" required aria-label="Correo electrónico">
+                <button type="submit" class="lm-submit">Quiero la guía gratis →</button>
+                <label class="lm-consent">
+                    <input type="checkbox" required>
+                    Acepto recibir la guía por email y la <a href="privacidad.html">política de privacidad</a>.
+                </label>
+            </form>
+        </div>
+    </div>
+
+    <!-- Iframes ocultos donde "aterrizan" los envíos a Google Forms, sin navegar fuera de la página -->
+    <iframe name="hidden_iframe_guia" id="hidden_iframe_guia" style="display:none;"
+        onload="if (window.guiaEnviada) { window.location.href = 'gracias.html'; }"></iframe>
+    <iframe name="hidden_iframe_comunidad" id="hidden_iframe_comunidad" style="display:none;"
+        onload="if (window.comunidadEnviada) {
+            document.getElementById('community-form').style.display = 'none';
+            document.getElementById('community-thanks').style.display = 'block';
+        }"></iframe>
+
     <div id="footer"></div>
     <script src="footer.js"></script>
 </div>

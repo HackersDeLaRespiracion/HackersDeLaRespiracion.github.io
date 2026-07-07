@@ -394,7 +394,7 @@ footer a:hover { text-decoration: underline; }
 .lead-magnet-bottom { margin-bottom: 8px; }
 .lm-icon { font-size: 1.8rem; margin-bottom: 8px; }
 .lm-title { font-family: var(--font-head); font-size: 1.3rem; font-weight: 600; color: var(--text); margin-bottom: 10px; }
-.lm-desc { font-size: 0.9rem; color: var(--text-mid); max-width: 460px; margin: 0 auto 20px; line-height: 1.65; }
+.lm-desc { font-size: 0.9rem; color: var(--text); max-width: 460px; margin: 0 auto 20px; line-height: 1.65; }
 .lm-form {
     display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;
     max-width: 480px; margin: 0 auto;
@@ -413,7 +413,7 @@ footer a:hover { text-decoration: underline; }
 .lm-submit:hover { background: #4a7a5e; }
 .lm-consent {
     flex: 1 0 100%; display: flex; align-items: center; gap: 6px;
-    font-size: 0.74rem; color: var(--text-dim); margin-top: 6px; text-align: left;
+    font-size: 0.74rem; color: var(--text); margin-top: 6px; text-align: left;
     justify-content: center;
 }
 .lm-consent input { flex-shrink: 0; }

@@ -387,7 +387,10 @@ footer a:hover { text-decoration: underline; }
 .lead-magnet {
     max-width: var(--max); margin: 0 auto;
     animation: fadeUp 0.7s ease both;
-    background: linear-gradient(135deg, rgba(93,138,110,0.10), rgba(201,146,78,0.08));
+    /* Se añade un fondo blanco semi-transparente detrás del degradado */
+    background: linear-gradient(135deg, rgba(93,138,110,0.10), rgba(201,146,78,0.08)), rgba(255, 255, 255, 0.75);
+    /* Se añade el efecto de desenfoque zen igual que en las reseñas */
+    backdrop-filter: blur(6px);
     border: 1.5px solid var(--sage); border-radius: var(--radius);
     box-shadow: var(--shadow); padding: 36px 32px; text-align: center;
 }

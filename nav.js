@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
   navContainer.innerHTML = `
     <header>
       <div class="container nav-grid">
-        <a href="index.html#inicio" class="logo">David García-Pozuelo</a>
+        <a href="index.html#inicio" class="logo">HackersDeLaRespiración</a>
         <nav>
           <ul class="nav-links">
             <li><a href="index.html#sobre-mi">Sobre mí</a></li>

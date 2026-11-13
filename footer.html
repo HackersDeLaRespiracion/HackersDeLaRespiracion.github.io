@@ -1,18 +1,20 @@
-<footer>
-    <p>
-        © 2026 Hackers de la Respiración · David García-Pozuelo Ramos
-    </p>
+// Generador de pie de página unificado
+document.addEventListener("DOMContentLoaded", function () {
+  const footerContainer = document.getElementById("footer-container");
 
-    <p>
-        <a href="aviso-legal.html">Aviso legal</a> ·
-        <a href="privacidad.html">Política de privacidad</a> ·
-        <a href="cookies.html">Política de cookies</a> ·
-        <a href="mapa.html">Mapa del sitio</a> ·
-        <a href="contacto.html">Contacto</a>
-    </p>
+  if (!footerContainer) return;
 
-    <p>
-        Todos los contenidos de este sitio están protegidos por derechos de autor. 
-        Queda prohibida su reproducción total o parcial sin autorización expresa.
-    </p>
-</footer>
+  const currentYear = new Date().getFullYear();
+
+  footerContainer.innerHTML = `
+    <footer>
+      <div class="container footer-grid">
+        <p>&copy; ${currentYear} David García-Pozuelo Ramos — Hackers de la Respiración. Todos los derechos reservados.</p>
+        <div class="footer-links">
+          <a href="https://amzn.to/4cwTSJZ" target="_blank" rel="noopener">Libro en Amazon</a>
+          <a href="#inicio">Volver arriba ↑</a>
+        </div>
+      </div>
+    </footer>
+  `;
+});

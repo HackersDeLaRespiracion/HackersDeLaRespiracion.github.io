@@ -1,107 +1,69 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Respiración emocional: experiencias y respiración para la ansiedad | Hackers de la Respiración</title>
-    <meta name="description" content="Prácticas vivenciales y respiración emocional: libros y artículos para usar la respiración como puerta de entrada a estados internos más profundos, también en momentos de ansiedad.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Nunito+Sans:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="Images/icon.png" type="image/png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Experiencias y Testimonios | David García-Pozuelo</title>
+  <meta name="description" content="Testimonios reales de profesionales y lectores sobre el método de autorregulación del estrés y el foco mental.">
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-experiencias">
-<div class="page">
-    <nav class="navbar">
-        <div class="navbar-inner">
-            <a href="index.html" class="nav-logo">Hackers de la Respiración</a>
-            <ul class="nav-links">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="ciencia.html">Ciencia</a></li>
-                <li><a href="experiencias.html" class="active">Experiencias</a></li>
-                <li><a href="suplementos.html">Nutrición</a></li>
-            </ul>
-            <button class="nav-burger" onclick="toggleMenu()" aria-label="Menú">☰</button>
+<body>
+
+  <!-- Navegación dinámica -->
+  <div id="nav-container"></div>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="badge">Prueba Social & Resultados</span>
+          <h1>Experiencias y Testimonios</h1>
+          <p>Casos reales de profesionales y lectores que han integrado la autorregulación respiratoria para reducir la fatiga y mejorar la claridad mental.</p>
         </div>
-    </nav>
-    <section class="page-hero">
-        <div class="page-hero-inner">
-            <p class="page-tag">Módulo · Prácticas vivenciales</p>
-            <h1 class="page-title">Si lo que buscas ahora es <em>vivenciar</em> experiencias respiratorias más emocionales</h1>
-            <p class="page-intro">Cuando la respiración deja de ser fisiología y se convierte en puerta de acceso a estados más profundos. Para quienes prefieren sentir a entender.</p>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
+          
+          <div class="bio-quote-card" style="background: #ffffff; border-left: 4px solid var(--primary);">
+            <blockquote>
+              "Como responsable técnico, el nivel de exigencia diario me generaba mucha tensión acumulada al final de la jornada. Aprender el esquema de 60 minutos me dio una herramienta concreta para desconectar el cuerpo antes de volver a casa."
+            </blockquote>
+            <cite>— Javier M., Ingeniero de Sistemas</cite>
+          </div>
+
+          <div class="bio-quote-card" style="background: #ffffff; border-left: 4px solid var(--secondary);">
+            <blockquote>
+              "Tenía problemas para mantener el foco en sesiones largas de trabajo. El trabajo con el dióxido de carbono y las respiraciones diafragmáticas me han devuelto la claridad mental sin misticismos."
+            </blockquote>
+            <cite>— Elena R., Directora de Proyectos</cite>
+          </div>
+
+          <div class="bio-quote-card" style="background: #ffffff; border-left: 4px solid var(--primary);">
+            <blockquote>
+              "El libro 'Hackers de la Respiración' te da la teoría científica exacta y el plan de 21 días hace que afianzar el hábito sea algo automático. Muy recomendable."
+            </blockquote>
+            <cite>— Carlos S., Lector en Amazon</cite>
+          </div>
+
+          <div class="bio-quote-card" style="background: #ffffff; border-left: 4px solid var(--secondary);">
+            <blockquote>
+              "Combinar 10 minutos de movilidad consciente con 30 minutos de respiración y 15 de atención plena es la estructura perfecta para salir de la cabeza y relajar el cuello y los hombros."
+            </blockquote>
+            <cite>— Maria P., Profesional del sector industrial</cite>
+          </div>
+
         </div>
+
+        <div style="text-align: center; margin-top: 3rem;">
+          <a href="contacto.html" class="btn btn-primary">Solicitar información sobre programas</a>
+        </div>
+      </div>
     </section>
-    <div class="content-wrap">
+  </main>
 
-        <div class="suppl-card">
-            <p class="suppl-body">
-                No toda la respiración consciente busca explicar; a veces busca sentir. Esta sección reúne
-                libros que tratan la respiración como puerta de entrada a estados emocionales profundos:
-                desde la quietud que propone el Tao hasta el trabajo de disolución de bloqueos emocionales de
-                Michael Brown. También enlazo aquí con uno de los usos más prácticos y demandados de la
-                respiración consciente: la <strong>gestión de la ansiedad y de los picos de pánico</strong>.
-            </p>
-        </div>
+  <!-- Pie de página dinámico -->
+  <div id="footer-container"></div>
 
-        <div class="section-head"><h2>Artículo relacionado</h2><div class="section-line"></div></div>
-        <div class="related-articles">
-            <a href="Articulos/respiracion-para-ataques-de-ansiedad.html" class="related-card">
-                <span class="related-icon">📄</span>
-                <span class="related-text">
-                    <span class="related-title">Respiración para ataques de ansiedad</span>
-                    <span class="related-desc">Qué hacer con la respiración cuando la ansiedad sube de golpe, y qué evitar.</span>
-                </span>
-            </a>
-        </div>
-
-        <div class="section-head"><h2>Lecturas recomendadas</h2><div class="section-line"></div></div>
-        <div class="book-card">
-            <div class="book-num">01</div>
-            <div class="book-info">
-                <h3>Tao para vivir</h3>
-                <p class="author">Ángel García, Daniel García y Liu Zheng · Anaya Multimedia</p>
-                <p class="book-review">Hay una sabiduría que no se enseña, se recuerda. El Tao lleva milenios apuntando hacia lo mismo que hoy nos confirma la neurociencia: que la calma no se consigue, se permite. Este libro es una invitación a soltar. A respirar desde la quietud, a moverse desde el centro. Sus páginas no te darán instrucciones a seguir al pie de la letra —el Tao nunca funciona así—, sino que te abrirán un espacio interior para que encuentres tu propio ritmo.</p>
-                <div class="book-actions">
-                    <a href="https://amzn.to/41ZMiCL" class="btn-action amazon" target="_blank" rel="noopener">📖 Ver en Amazon</a>
-                    <a href="https://amzn.to/41ZMiCL#customerReviews" class="btn-action reviews" target="_blank" rel="noopener">⭐ Reseñas en Amazon</a>
-                    <a href="Entradas_blog/entrada_blog_tao_para_vivir.html" class="btn-action blog">📝 Mi reseña</a>
-                </div>
-            </div>
-        </div>
-        <div class="book-card">
-            <div class="book-num">02</div>
-            <div class="book-info">
-                <h3>El proceso de la presencia</h3>
-                <p class="author">Michael Brown · Ediciones Obelisco</p>
-                <p class="book-review">Hay libros que se leen, y otros que te proponen un trabajo. Este es del segundo tipo. Michael Brown nos ofrece algo aparentemente sencillo —estar presente— y dedica sus páginas a explicar con claridad extraordinaria por qué nos cuesta tanto. Su propuesta es un proceso de diez semanas en el que el compromiso central es respirar conscientemente quince minutos dos veces al día. Sin grandes aparatos, sin gurú. Solo tú, tu aliento y una afirmación semanal que activa algo difícil de describir y fácil de sentir.</p>
-                <div class="book-actions">
-                    <a href="https://amzn.to/4cwSxEd" class="btn-action amazon" target="_blank" rel="noopener">📖 Ver en Amazon</a>
-                    <a href="https://amzn.to/4cwSxEd#customerReviews" class="btn-action reviews" target="_blank" rel="noopener">⭐ Reseñas en Amazon</a>
-                    <a href="Entradas_blog/entrada_blog_proceso_presencia.html" class="btn-action blog">📝 Mi reseña</a>
-                </div>
-            </div>
-        </div>
-        <div class="book-card">
-            <div class="book-num">03</div>
-            <div class="book-info">
-                <h3>Sanar el corazón</h3>
-                <p class="author">Ketan Raventós Klein · Gaia Ediciones</p>
-                <p class="book-review">Para poder contarte, tendrás que esperar un poquito aún, ya que ésta es una de mis próximas lecturas...</p>
-                <div class="book-actions">
-                    <a href="https://amzn.to/4trc9jd" class="btn-action amazon" target="_blank" rel="noopener">📖 Ver en Amazon</a>
-                    <a href="https://amzn.to/4trc9jd#customerReviews" class="btn-action reviews" target="_blank" rel="noopener">⭐ Reseñas en Amazon</a>
-                </div>
-            </div>
-        </div>
-
-        <div style="text-align:center; padding-top: 8px;">
-            <a href="https://amzn.to/4cwTSJZ" class="btn-action amazon" target="_blank" rel="noopener">📖 Si quieres ir más allá, lo explico todo en el libro Hackers de la Respiración →</a>
-        </div>
-
-    </div>
-    <div id="footer"></div>
-    <script src="footer.js"></script>
-</div>
-<script src="nav.js"></script>
+  <script src="nav.js"></script>
+  <script src="footer.js"></script>
 </body>
 </html>

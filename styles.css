@@ -544,3 +544,84 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+/* ==========================================================================
+   ESTILOS DE PIE DE PÁGINA Y NAVEGACIÓN EXTENDIDA
+   ========================================================================== */
+
+.btn-nav-highlight {
+  background: var(--primary);
+  color: #ffffff !important;
+  padding: 0.4rem 1rem;
+  border-radius: 6px;
+  transition: background 0.2s ease;
+}
+
+.btn-nav-highlight:hover {
+  background: var(--primary-hover);
+}
+
+.footer-content-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr;
+  gap: 3rem;
+}
+
+.footer-col h3 {
+  color: #ffffff;
+  margin-bottom: 0.75rem;
+}
+
+.footer-col h4 {
+  color: #ffffff;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.footer-col ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.footer-col a {
+  color: #94a3b8;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.2s ease;
+}
+
+.footer-col a:hover {
+  color: #ffffff;
+}
+
+.footer-tagline {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+
+.copyright {
+  font-size: 0.8rem;
+  color: #64748b;
+}
+
+.stat-link, .text-link {
+  display: inline-block;
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.stat-link:hover, .text-link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .footer-content-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}

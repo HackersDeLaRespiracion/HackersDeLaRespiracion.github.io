@@ -1,44 +1,59 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aviso legal — Hackers de la Respiración</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Nunito+Sans:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="Images/icon.png" type="image/png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aviso Legal | David García-Pozuelo</title>
+  <meta name="description" content="Aviso legal y condiciones de uso del sitio web de David García-Pozuelo Ramos.">
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-legal">
-<div class="page">
-    <nav class="navbar">
-        <div class="navbar-inner">
-            <a href="index.html" class="nav-logo">Hackers de la Respiración</a>
-            <ul class="nav-links">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="ciencia.html">Ciencia</a></li>
-                <li><a href="experiencias.html">Experiencias</a></li>
-                <li><a href="suplementos.html">Nutrición</a></li>
-            </ul>
-            <button class="nav-burger" onclick="toggleMenu()" aria-label="Menú">☰</button>
+<body>
+
+  <!-- Navegación dinámica -->
+  <div id="nav-container"></div>
+
+  <main>
+    <section class="section">
+      <div class="container" style="max-width: 800px;">
+        <div class="section-header">
+          <span class="badge">Información Legal</span>
+          <h1>Aviso Legal</h1>
         </div>
-    </nav>
-    <section class="page-hero"><div class="page-hero-inner"><h1 class="page-title">Aviso legal</h1></div></section>
-    <div class="content-wrap prose">
-        <p>En cumplimiento del deber de información establecido en la Ley 34/2002 de Servicios de la Sociedad de la Información y Comercio Electrónico (LSSI-CE), se facilitan a continuación los datos del titular del sitio web:</p>
-        <p>Titular: David García-Pozuelo Ramos<br>Sitio web: Hackers de la Respiración<br>Actividad: Divulgación sobre respiración, fisiología y bienestar</p>
-        <h3>Objeto</h3>
-        <p>El presente sitio web tiene como finalidad compartir información, experiencias y recursos relacionados con la respiración, la fisiología y el bienestar.</p>
-        <h3>Responsabilidad</h3>
-        <p>El contenido de este sitio tiene carácter meramente informativo y divulgativo. No sustituye asesoramiento médico, sanitario o profesional.</p>
-        <h3>Propiedad intelectual</h3>
-        <p>Todos los contenidos del sitio web, incluyendo textos, diseño, logotipos e imágenes, están protegidos por derechos de autor. Queda prohibida su reproducción sin autorización expresa.</p>
-        <h3>Enlaces externos</h3>
-        <p>Este sitio puede contener enlaces a páginas externas. El titular no se responsabiliza del contenido de dichos sitios. El autor no recibe ninguna contraprestación a cambio por parte de los fabricantes de los productos, o de los autores de los libros citados.</p>
-    </div>
-    <div id="footer"></div>
-    <script src="footer.js"></script>
-</div>
-<script src="nav.js"></script>
+
+        <div class="card" style="padding: 2.5rem; display: flex; flex-direction: column; gap: 1.5rem;">
+          <div>
+            <h3>1. Datos Identificativos</h3>
+            <p>En cumplimiento con el artículo 10 de la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y Comercio Electrónico (LSSI-CE), se facilitan los siguientes datos:</p>
+            <ul>
+              <li><strong>Titular:</strong> David García-Pozuelo Ramos</li>
+              <li><strong>Proyecto:</strong> Hackers de la Respiración / Ingeniería del Bienestar</li>
+              <li><strong>Correo electrónico de contacto:</strong> A través del formulario oficial en <a href="contacto.html">contacto.html</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3>2. Propiedad Intelectual y Contenidos</h3>
+            <p>Todos los contenidos del sitio web, incluyendo textos, artículos, metodologías, imágenes, logotipos y el libro <em>Hackers de la Respiración</em>, están protegidos por los derechos de propiedad intelectual e industrial pertenecientes a David García-Pozuelo Ramos. Queda prohibida su reproducción, distribución o transformación sin autorización previa y por escrito.</p>
+          </div>
+
+          <div>
+            <h3>3. Exención de Responsabilidad Médica</h3>
+            <p>Las técnicas de respiración, Chikung y meditación divulgadas en esta web tienen un propósito meramente educativo y de entrenamiento en autorregulación y gestión del estrés. <strong>No constituyen un tratamiento médico, psiquiátrico ni psicológico.</strong> Ante cualquier condición de salud preexistente o trastorno de ansiedad severo, se recomienda consultar previamente con un profesional sanitario colegiado.</p>
+          </div>
+
+          <div>
+            <h3>4. Enlaces a Terceros</h3>
+            <p>Este sitio web puede incluir enlaces a plataformas de terceros (como Amazon para la compra del libro). David García-Pozuelo Ramos no asume responsabilidad sobre las políticas de privacidad o contenidos de dichos sitios externos.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Pie de página dinámico -->
+  <div id="footer-container"></div>
+
+  <script src="nav.js"></script>
+  <script src="footer.js"></script>
 </body>
 </html>

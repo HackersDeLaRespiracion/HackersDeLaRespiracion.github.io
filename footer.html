@@ -1,4 +1,4 @@
-// Generador de pie de página unificado
+// Generador de pie de página unificado con mapa del sitio y páginas secundarias
 document.addEventListener("DOMContentLoaded", function () {
   const footerContainer = document.getElementById("footer-container");
 
@@ -8,11 +8,34 @@ document.addEventListener("DOMContentLoaded", function () {
 
   footerContainer.innerHTML = `
     <footer>
-      <div class="container footer-grid">
-        <p>&copy; ${currentYear} David García-Pozuelo Ramos — Hackers de la Respiración. Todos los derechos reservados.</p>
-        <div class="footer-links">
-          <a href="https://amzn.to/4cwTSJZ" target="_blank" rel="noopener">Libro en Amazon</a>
-          <a href="#inicio">Volver arriba ↑</a>
+      <div class="container footer-content-grid">
+        <div class="footer-col brand-col">
+          <h3>David García-Pozuelo</h3>
+          <p class="footer-tagline">Ingeniería del bienestar, regulación del estrés y foco mental a través de la neurofisiología aplicada.</p>
+          <p class="copyright">&copy; ${currentYear} Hackers de la Respiración. Todos los derechos reservados.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navegación</h4>
+          <ul>
+            <li><a href="index.html#inicio">Inicio</a></li>
+            <li><a href="index.html#metodo">El Método (60 min)</a></li>
+            <li><a href="ciencia.html">Evidencia Científica</a></li>
+            <li><a href="index.html#servicios">Programas & Empresas</a></li>
+            <li><a href="experiencias.html">Experiencias & Testimonios</a></li>
+            <li><a href="contacto.html">Contacto & Solicitudes</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Legal & Mapa</h4>
+          <ul>
+            <li><a href="aviso-legal.html">Aviso Legal</a></li>
+            <li><a href="privacidad.html">Política de Privacidad</a></li>
+            <li><a href="cookies.html">Política de Cookies</a></li>
+            <li><a href="mapa.html">Mapa del Sitio (Sitemap)</a></li>
+            <li><a href="https://amzn.to/4cwTSJZ" target="_blank" rel="noopener">Libro en Amazon ↗</a></li>
+          </ul>
         </div>
       </div>
     </footer>

@@ -1,80 +1,116 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto — Hackers de la Respiración</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Nunito+Sans:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="Images/icon.png" type="image/png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto | David García-Pozuelo - Gestión del Estrés y Foco Mental</title>
+  <meta name="description" content="Ponte en contacto con David García-Pozuelo. Programas para particulares y propuestas corporativas de gestión del estrés, fatiga y atención.">
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-home">
-<div class="page">
-    <nav class="navbar">
-        <div class="navbar-inner">
-            <a href="index.html" class="nav-logo">Hackers de la Respiración</a>
-            <ul class="nav-links">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="ciencia.html">Ciencia</a></li>
-                <li><a href="experiencias.html">Experiencias</a></li>
-                <li><a href="suplementos.html">Nutrición</a></li>
-            </ul>
-            <button class="nav-burger" onclick="toggleMenu()" aria-label="Menú">☰</button>
+<body>
+
+  <!-- Navegación dinámica -->
+  <div id="nav-container"></div>
+
+  <main>
+    <section class="section contact-hero">
+      <div class="container">
+        <div class="section-header">
+          <span class="badge">Contacto & Solicitudes</span>
+          <h1>Hablemos de tu caso o del de tu equipo</h1>
+          <p>Tanto si buscas un acompañamiento individual como si quieres implementar una propuesta de regulación del estrés y fatiga en tu empresa, escríbeme directamente.</p>
         </div>
-    </nav>
-    <section class="page-hero">
-        <div class="page-hero-inner">
-            <div class="page-tag">Contacto</div>
-            <h1 class="page-title">Hablemos</h1>
-            <p class="page-intro">Si tienes preguntas, sugerencias o simplemente quieres compartir tu experiencia con la respiración, estoy al otro lado.</p>
-        </div>
-    </section>
-    <main class="content-wrap">
-        <div class="section-head"><h2>Cómo encontrarme</h2><div class="section-line"></div></div>
+
         <div class="contact-grid">
-            <a class="contact-card" href="mailto:davidgarciapozueloramos@gmail.com">
-                <div class="contact-icon">✉️</div>
-                <div class="contact-info">
-                    <div class="contact-label">Correo electrónico</div>
-                    <div class="contact-value">davidgarciapozueloramos@gmail.com</div>
-                    <div class="contact-hint">Para consultas, colaboraciones o simplemente charlar.</div>
+          <!-- FORMULARIO PRINCIPAL -->
+          <div class="card contact-form-card">
+            <h3>Enviar un mensaje</h3>
+            <p class="form-intro">Selecciona el tipo de consulta para poder darte una respuesta adaptada a tus necesidades.</p>
+
+            <form class="contact-form" action="#" method="POST" onsubmit="event.preventDefault(); alert('¡Gracias por tu mensaje! Te responderé en un plazo de 24-48 horas.');">
+              
+              <div class="form-group">
+                <label for="tipo-cliente">¿En qué formato estás interesado? *</label>
+                <select id="tipo-cliente" name="tipo-cliente" required>
+                  <option value="" disabled selected>Selecciona una opción...</option>
+                  <option value="particular">Particular — Programa "Respira y vuelve a ti" (Grupos/1 a 1)</option>
+                  <option value="empresa">Empresa / Organización — Talleres de Estrés, Fatiga y Atención</option>
+                  <option value="libro">Libro "Hackers de la Respiración" / Prensa / Dudas</option>
+                  <option value="otro">Otro motivo</option>
+                </select>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="nombre">Nombre completo *</label>
+                  <input type="text" id="nombre" name="nombre" placeholder="Ej. Ana Martínez" required>
                 </div>
-                <div class="contact-arrow">→</div>
-            </a>
-            <a class="contact-card" href="https://www.instagram.com/davidgarciapozueloramos" target="_blank" rel="noopener noreferrer">
-                <div class="contact-icon">📸</div>
-                <div class="contact-info">
-                    <div class="contact-label">Instagram</div>
-                    <div class="contact-value">@davidgarciapozueloramos</div>
-                    <div class="contact-hint">Contenido del día a día, reflexiones y novedades del proyecto.</div>
+                <div class="form-group">
+                  <label for="email">Correo electrónico *</label>
+                  <input type="email" id="email" name="email" placeholder="tu.email@ejemplo.com" required>
                 </div>
-                <div class="contact-arrow">→</div>
-            </a>
-            <a class="contact-card" href="https://www.linkedin.com/in/david-garc%C3%ADa-pozuelo-ramos-06617925/" target="_blank" rel="noopener noreferrer">
-                <div class="contact-icon">💼</div>
-                <div class="contact-info">
-                    <div class="contact-label">LinkedIn</div>
-                    <div class="contact-value">David García-Pozuelo Ramos</div>
-                    <div class="contact-hint">Trayectoria profesional y conexiones.</div>
-                </div>
-                <div class="contact-arrow">→</div>
-            </a>
-            <a class="contact-card" href="https://amzn.to/4t57CSr" target="_blank" rel="noopener noreferrer">
-                <div class="contact-icon">👤</div>
-                <div class="contact-info">
-                    <div class="contact-label">Perfil de autor</div>
-                    <div class="contact-value">David García-Pozuelo Ramos en Amazon</div>
-                    <div class="contact-hint">Biografía completa del autor y obras publicadas.</div>
-                </div>
-                <div class="contact-arrow">→</div>
-            </a>
+              </div>
+
+              <div class="form-group">
+                <label for="empresa-nombre">Empresa u Organización (Opcional)</label>
+                <input type="text" id="empresa-nombre" name="empresa-nombre" placeholder="Ej. ENAIRE, Sector Industrial, etc.">
+              </div>
+
+              <div class="form-group">
+                <label for="mensaje">¿En qué te puedo ayudar? *</label>
+                <textarea id="mensaje" name="mensaje" rows="5" placeholder="Cuéntame brevemente tu situación actual o el objetivo que queréis lograr en tu organización..." required></textarea>
+              </div>
+
+              <div class="form-checkbox">
+                <input type="checkbox" id="privacidad" name="privacidad" required>
+                <label for="privacidad">He leído y acepto la <a href="privacidad.html" target="_blank">política de privacidad</a>. *</label>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block">Enviar mensaje</button>
+            </form>
+          </div>
+
+          <!-- TARJETA DE INFORMACIÓN DE CONTACTO -->
+          <div class="contact-info-card">
+            <div class="info-block">
+              <h3>David García-Pozuelo Ramos</h3>
+              <p class="info-subtitle">Ingeniero & Facilitador de Salud Neurofisiológica</p>
+              <p>Metodología pragmática y basada en evidencia para la regulación del sistema nervioso en entornos de alta demanda [4].</p>
+            </div>
+
+            <hr class="divider">
+
+            <div class="info-block">
+              <h4>Canales directos</h4>
+              <ul class="contact-list">
+                <li>
+                  <strong>Instagram:</strong> 
+                  <a href="https://www.instagram.com/davidgarciapozueloramos" target="_blank" rel="noopener">@davidgarciapozueloramos</a> [5]
+                </li>
+                <li>
+                  <strong>Libro en Amazon:</strong> 
+                  <a href="https://amzn.to/4cwTSJZ" target="_blank" rel="noopener">Hackers de la Respiración</a> [6]
+                </li>
+                <li>
+                  <strong>Ubicación / Modalidad:</strong> 
+                  Sesiones presenciales (Madrid / según propuesta) u online.
+                </li>
+              </ul>
+            </div>
+
+            <div class="info-box-highlight">
+              ⏱️ <strong>Compromiso de respuesta:</strong> Respondo personalmente a todas las consultas en un plazo máximo de 24 a 48 horas laborables.
+            </div>
+          </div>
         </div>
-        <div class="disclaimer"><strong>Una nota personal:</strong> Este proyecto nace del entusiasmo genuino por la respiración y el bienestar. Intento responder a todos los mensajes, aunque a veces tarde un poco. Gracias por tu paciencia y por tu interés.</div>
-    </main>
-    <div id="footer"></div>
-    <script src="footer.js"></script>
-</div>
-<script src="nav.js"></script>
+      </div>
+    </section>
+  </main>
+
+  <!-- Pie de página dinámico -->
+  <div id="footer-container"></div>
+
+  <script src="nav.js"></script>
+  <script src="footer.js"></script>
 </body>
 </html>

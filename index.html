@@ -134,15 +134,27 @@
         <div class="lead-content">
           <h2>Descarga la Guía Rápida de 5 Minutos</h2>
           <p>3 ejercicios de respiración diafragmática para abortar picos de ansiedad y recuperar la calma en menos de 2 minutos.</p>
-          <form class="lead-form" action="gracias.html" method="GET">
-            <input type="email" placeholder="Tu correo electrónico profesional" required>
+          <form class="lead-form"
+                action="https://docs.google.com/forms/d/e/1FAIpQLSd7AHImUZ8GT3tS6Au5wdsoTtx5zmC52XWrN7j-fO8tG_r1SA/formResponse"
+                method="POST"
+                target="hidden_iframe_guia"
+                onsubmit="window.guiaEnviada = true;">
+            <input type="email" name="entry.586163821" placeholder="Tu correo electrónico profesional" required aria-label="Correo electrónico">
             <button type="submit" class="btn btn-primary">Recibir la guía gratis</button>
+            <label class="lm-consent">
+              <input type="checkbox" required>
+              Acepto recibir la guía por email y la <a href="privacidad.html">política de privacidad</a>.
+            </label>
           </form>
           <small class="privacy-note">Sin spam. Respetamos tu <a href="privacidad.html" style="color: #cbd5e1; text-decoration: underline;">política de privacidad</a> al 100%.</small>
         </div>
       </div>
     </section>
   </main>
+
+  <!-- Iframe oculto donde "aterriza" el envío a Google Forms, sin salir de la página -->
+  <iframe name="hidden_iframe_guia" id="hidden_iframe_guia" style="display:none;"
+          onload="if (window.guiaEnviada) { window.location.href = 'gracias.html'; }"></iframe>
 
   <!-- Pie de página dinámico -->
   <div id="footer-container"></div>

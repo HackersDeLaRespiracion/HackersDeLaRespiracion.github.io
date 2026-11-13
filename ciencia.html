@@ -1,102 +1,144 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ciencia de la respiración: fisiología y neurociencia | Hackers de la Respiración</title>
-    <meta name="description" content="La ciencia detrás de la respiración: fisiología, neurociencia y libros de referencia para entender qué ocurre en tu cuerpo cuando respiras, y por qué eso importa.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Nunito+Sans:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="Images/icon.png" type="image/png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Evidencia Científica & Neurofisiología | David García-Pozuelo</title>
+  <meta name="description" content="Fundamentos científicos de la respiración consciente y la regulación del sistema nervioso: nervio vago, efecto Bohr, HRV y neuroplasticidad.">
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-ciencia">
-<div class="page">
-    <nav class="navbar">
-        <div class="navbar-inner">
-            <a href="index.html" class="nav-logo">Hackers de la Respiración</a>
-            <ul class="nav-links">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="ciencia.html" class="active">Ciencia</a></li>
-                <li><a href="experiencias.html">Experiencias</a></li>
-                <li><a href="suplementos.html">Nutrición</a></li>
-            </ul>
-            <button class="nav-burger" onclick="toggleMenu()" aria-label="Menú">☰</button>
+<body>
+
+  <!-- Navegación dinámica -->
+  <div id="nav-container"></div>
+
+  <main>
+    <!-- HERO DE CIENCIA -->
+    <section class="section science-hero">
+      <div class="container">
+        <div class="section-header">
+          <span class="badge">Ingeniería del Bienestar & Evidencia</span>
+          <h1>La Ciencia Detrás de la Respiración</h1>
+          <p>Sin misticismos ni teorías infundadas. Un análisis riguroso de la neurofisiología y la bioquímica que explican cómo el aliento modula el sistema nervioso autónomo.</p>
         </div>
-    </nav>
-    <section class="page-hero">
-        <div class="page-hero-inner">
-            <p class="page-tag">Módulo · Lecturas científicas</p>
-            <h1 class="page-title">La ciencia de la respiración: <em>fisiología y neurociencia</em> explicadas con rigor</h1>
-            <p class="page-intro">Libros y artículos con base científica para entender qué ocurre realmente en tu cuerpo cuando respiras. Para los que necesitan el «por qué» antes del «cómo».</p>
-        </div>
+      </div>
     </section>
-    <div class="content-wrap">
 
-        <div class="suppl-card">
-            <p class="suppl-body">
-                ¿Por qué una respiración lenta calma el sistema nervioso? ¿Qué diferencia hay entre la
-                <strong>respiración diafragmática y la respiración torácica</strong>? ¿Cómo influye el ritmo
-                cardíaco en lo que sientes? Esta sección reúne los libros que más me han ayudado a entender
-                la fisiología real de la respiración —sin esoterismo, con neurociencia aplicada— y los
-                artículos donde desarrollo, con más detalle, algunos de los conceptos que esos libros plantean.
+    <!-- PILARES CIENTÍFICOS -->
+    <section class="section science-pillars">
+      <div class="container">
+        <div class="pillars-grid">
+          
+          <!-- Pilar 1: Nervio Vago -->
+          <div class="card pillar-card">
+            <div class="pillar-icon">🧠</div>
+            <h3>1. El Sistema Nervioso Autónomo y el Nervio Vago</h3>
+            <p>
+              El nervio vago es el componente principal del sistema parasimpático («el freno» corporal) [3]. Conecta el tronco cerebral con órganos clave como el corazón, los pulmones y el sistema digestivo [3, 4].
             </p>
+            <ul>
+              <li><strong>Mecanismo:</strong> Las exhalaciones lentas y prolongadas estimulan directamente el tono vagal, enviando una señal inmediata al cerebro para desactivar la respuesta de «lucha o huida» [3, 5].</li>
+              <li><strong>Efecto:</strong> Disminución del ritmo cardíaco, reducción de la reactividad emocional y menor nivel de cortisol [2, 3].</li>
+            </ul>
+          </div>
+
+          <!-- Pilar 2: Efecto Bohr -->
+          <div class="card pillar-card">
+            <div class="pillar-icon">🩸</div>
+            <h3>2. Bioquímica Sanguínea y Efecto Bohr</h3>
+            <p>
+              Contrario a la creencia popular, respirar mejor no consiste en meter más aire (hiperventilar), sino en gestionar eficientemente el dióxido de carbono (CO₂) [6, 7].
+            </p>
+            <ul>
+              <li><strong>Descubrimiento (Christian Bohr, 1904):</strong> La hemoglobina solo libera el oxígeno hacia los músculos y el cerebro cuando existen niveles adecuados de CO₂ en sangre [6, 8].</li>
+              <li><strong>Hiperventilación vs. Calma:</strong> Respirar rápido elimina exceso de CO₂, provocando que el oxígeno se quede «atrapado» en la sangre sin llegar a los tejidos [6, 8]. La respiración diafragmática lenta optimiza esta entrega celular [6, 9].</li>
+            </ul>
+          </div>
+
+          <!-- Pilar 3: HRV -->
+          <div class="card pillar-card">
+            <div class="pillar-icon">🫀</div>
+            <h3>3. Variabilidad del Ritmo Cardíaco (HRV)</h3>
+            <p>
+              La HRV (variaciones en milisegundos entre latidos) es el indicador principal de resiliencia biológica y salud del sistema nervioso [10, 11].
+            </p>
+
+            <ul>
+              <li><strong>Arrastre cardiorrespiratorio:</strong> Al respirar a un ritmo sostenido de aproximadamente 6 respiraciones por minuto (frecuencia de 0,1 Hz), el corazón y los pulmones entran en sincronía [2, 11].</li>
+              <li><strong>Biorretroalimentación:</strong> Maximizar la HRV mejora la sensibilidad del barorreflejo arterial y entrena al cuerpo para adaptarse a situaciones de alto estrés [11-13].</li>
+            </ul>
+          </div>
+
+          <!-- Pilar 4: Neuroplasticidad -->
+          <div class="card pillar-card">
+            <div class="pillar-icon">⚡</div>
+            <h3>4. Neuroplasticidad y Redes Cerebrales</h3>
+            <p>
+              La práctica continuada de respiración consciente modifica la estructura y el funcionamiento cerebral [14-16].
+            </p>
+            <ul>
+              <li><strong>Regulación de la amígdala:</strong> Estudios con resonancia magnética demuestran una reducción funcional en el tamaño y reactividad de la amígdala (el centro del miedo y la alerta) [2, 14].</li>
+              <li><strong>Desactivación de la Red por Defecto (DMN):</strong> Apaga el ruido mental constante y la divagación pasiva, fortaleciendo la atención sostenida en la corteza prefrontal [2, 15].</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ESTUDIOS Y REFERENCIAS DE AUTORIDAD -->
+    <section class="section studies-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Evidencia Publicada en Revistas de Referencia</h2>
+          <p>Investigaciones clave que respaldan la autorregulación respiratoria como intervención primaria para la salud mental y el rendimiento.</p>
         </div>
 
-        <div class="section-head"><h2>Artículos relacionados</h2><div class="section-line"></div></div>
-        <div class="related-articles">
-            <a href="Articulos/respiracion-diafragmatica-vs-toracica.html" class="related-card">
-                <span class="related-icon">📄</span>
-                <span class="related-text">
-                    <span class="related-title">Respiración diafragmática vs. torácica: diferencias y cómo identificar la tuya</span>
-                    <span class="related-desc">La anatomía detrás de cada patrón, y un test rápido para saber cuál usas tú.</span>
-                </span>
-            </a>
-            <a href="Articulos/como-respirar-para-dormir-mejor.html" class="related-card">
-                <span class="related-icon">📄</span>
-                <span class="related-text">
-                    <span class="related-title">Cómo respirar para dormir mejor</span>
-                    <span class="related-desc">El mecanismo fisiológico detrás de la respiración como inductor del sueño.</span>
-                </span>
-            </a>
-        </div>
+        <div class="studies-grid">
+          <div class="study-box">
+            <h4>Modificación Estructural de la Amígdala</h4>
+            <p class="study-author">Hölzel et al. (2010) — <em>Social Cognitive and Affective Neuroscience</em></p>
+            <p>Evidenció mediante imágenes por resonancia magnética que la práctica consciente reduce la reactividad física del centro del miedo cerebral [14].</p>
+          </div>
 
-        <div class="section-head"><h2>Lecturas recomendadas</h2><div class="section-line"></div></div>
-        <div class="book-card">
-            <div class="book-num">01</div>
-            <div class="book-info">
-                <h3>Tu cuerpo tiene las respuestas</h3>
-                <p class="author">Giulia Enders · Editorial Planeta</p>
-                <p class="book-review">Este libro ha cambiado la forma en que me veo, gracias a las explicaciones de Giulia Enders sobre la biología del cuerpo humano. Escribe con claridad, humor y abordando los temas con una perspectiva que incluye el comportamiento. En estas páginas descubrirás que tu cuerpo no es un misterio opaco, sino un sistema extraordinariamente inteligente que, muchas veces, ya sabe lo que necesitas. Solo hay que aprender a escucharlo.</p>
-                <div class="book-actions">
-                    <a href="https://amzn.to/4etBVib" class="btn-action amazon" target="_blank" rel="noopener">📖 Ver en Amazon</a>
-                    <a href="https://amzn.to/4etBVib#customerReviews" class="btn-action reviews" target="_blank" rel="noopener">⭐ Reseñas en Amazon</a>
-                    <a href="Entradas_blog/entrada_blog_tu_cuerpo.html" class="btn-action blog">📝 Mi reseña</a>
-                </div>
-            </div>
-        </div>
-        <div class="book-card">
-            <div class="book-num">02</div>
-            <div class="book-info">
-                <h3>Neurociencia del cuerpo</h3>
-                <p class="author">Nazaret Castellanos · Editorial Kairós SA</p>
-                <p class="book-review">Nazaret Castellanos demuestra en este libro que el cuerpo no es simplemente el soporte donde vive la mente: es parte activa de cómo pensamos, sentimos y tomamos decisiones. A través de la neurociencia más reciente, explora cómo la postura, la respiración y las sensaciones físicas moldean nuestra experiencia interior. Después de leerlo miré mi respiración con otros ojos.</p>
-                <div class="book-actions">
-                    <a href="https://amzn.to/4vQOslN" class="btn-action amazon" target="_blank" rel="noopener">📖 Ver en Amazon</a>
-                    <a href="https://amzn.to/4vQOslN#customerReviews" class="btn-action reviews" target="_blank" rel="noopener">⭐ Reseñas en Amazon</a>
-                    <a href="Entradas_blog/entrada_blog_neurociencia_cuerpo.html" class="btn-action blog">📝 Mi reseña</a>
-                </div>
-            </div>
-        </div>
+          <div class="study-box">
+            <h4>Revisión de la Respiración Lenta y Tono Vagal</h4>
+            <p class="study-author">Zaccaro et al. (2018) — <em>Frontiers in Human Neuroscience</em></p>
+            <p>Revisión sistemática que confirma cómo los patrones lentos de inhalación/exhalación sincronizan las ondas cerebrales y aumentan la banda HF de la HRV [2, 17].</p>
+          </div>
 
-        <div style="text-align:center; padding-top: 8px;">
-            <a href="https://amzn.to/4cwTSJZ" class="btn-action amazon" target="_blank" rel="noopener">📖 Si quieres ir más allá, lo explico todo en el libro Hackers de la Respiración →</a>
-        </div>
+          <div class="study-box">
+            <h4>Sensibilidad Barorrefleja e Hipertensión</h4>
+            <p class="study-author">Joseph et al. (2005) — <em>Hypertension (American Heart Assoc.)</em></p>
+            <p>Demostró que reducir el ritmo respiratorio reeduca la regulación cardiovascular y disminuye significativamente la presión arterial sistólica [12, 13].</p>
+          </div>
 
-    </div>
-    <div id="footer"></div>
-    <script src="footer.js"></script>
-</div>
-<script src="nav.js"></script>
+          <div class="study-box">
+            <h4>Neurociencia Cognitiva y Atención Plena</h4>
+            <p class="study-author">Díez & Castellanos (2022) — <em>Revista de Neurología</em></p>
+            <p>Sintetiza cómo la atención al aliento desactiva la red por defecto (DMN), recuperando el control ejecutivo frente a la fatiga cognitiva [15].</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LLAMADA A LA ACCIÓN A LOS PROGRAMAS -->
+    <section class="section science-cta">
+      <div class="container text-center">
+        <h2>De la Ciencia a tu Práctica Diaria</h2>
+        <p>Todos estos principios neurofisiológicos se estructuran en nuestro método de 60 minutos (Chikung + Respiración + Meditación guiada) [18].</p>
+        <div class="cta-actions">
+          <a href="index.html#metodo" class="btn btn-primary">Ver la Metodología</a>
+          <a href="contacto.html" class="btn btn-outline">Consultar Programa para Empresas</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Pie de página dinámico -->
+  <div id="footer-container"></div>
+
+  <script src="nav.js"></script>
+  <script src="footer.js"></script>
 </body>
 </html>

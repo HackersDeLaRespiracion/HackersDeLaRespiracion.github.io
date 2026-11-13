@@ -455,3 +455,92 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+/* ==========================================================================
+   ESTILOS DE LA PÁGINA DE CIENCIA
+   ========================================================================== */
+
+.science-hero {
+  padding: 3rem 0 2rem;
+  background: #ffffff;
+  border-bottom: 1px solid var(--border);
+}
+
+.science-pillars {
+  padding: 4rem 0;
+}
+
+.pillars-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.pillar-card {
+  background: var(--bg-card);
+  padding: 2.5rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.03);
+}
+
+.pillar-icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.pillar-card ul {
+  margin-top: 1rem;
+  padding-left: 1.25rem;
+  color: var(--text-muted);
+}
+
+.pillar-card li {
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+/* Sección de Estudios */
+.studies-section {
+  background: #f1f5f9;
+  padding: 4rem 0;
+}
+
+.studies-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.study-box {
+  background: #ffffff;
+  padding: 1.75rem;
+  border-radius: var(--radius);
+  border-left: 4px solid var(--primary);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+}
+
+.study-author {
+  font-size: 0.85rem;
+  color: var(--secondary);
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+/* CTA final */
+.science-cta {
+  padding: 4rem 0;
+  background: #ffffff;
+}
+
+.cta-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .pillars-grid, .studies-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,102 +1,92 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mapa del sitio — Hackers de la Respiración</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Nunito+Sans:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="Images/icon.png" type="image/png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mapa del Sitio | David García-Pozuelo - Hackers de la Respiración</title>
+  <meta name="description" content="Mapa estructurado del sitio web de David García-Pozuelo: programas, método, evidencia científica, contacto y textos legales.">
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-legal">
-<div class="page">
-    <nav class="navbar">
-        <div class="navbar-inner">
-            <a href="index.html" class="nav-logo">Hackers de la Respiración</a>
-            <ul class="nav-links">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="ciencia.html">Ciencia</a></li>
-                <li><a href="experiencias.html">Experiencias</a></li>
-                <li><a href="suplementos.html">Nutrición</a></li>
-            </ul>
-            <button class="nav-burger" onclick="toggleMenu()" aria-label="Menú">☰</button>
+<body>
+
+  <!-- Navegación dinámica -->
+  <div id="nav-container"></div>
+
+  <main>
+    <section class="section">
+      <div class="container" style="max-width: 900px;">
+        <div class="section-header">
+          <span class="badge">Navegación General</span>
+          <h1>Mapa del Sitio (Sitemap)</h1>
+          <p>Índice completo y estructurado de las páginas, programas y recursos disponibles en esta plataforma.</p>
         </div>
-    </nav>
-    <section class="page-hero"><div class="page-hero-inner"><h1 class="page-title">Mapa del sitio</h1></div></section>
-    <div class="content-wrap sitemap">
-        <ul>
-            <li>
-                <span class="sitemap-section">Páginas principales (español)</span>
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="ciencia.html">Ciencia</a></li>
-                    <li><a href="experiencias.html">Experiencias</a></li>
-                    <li><a href="suplementos.html">Nutrición</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                    <li><a href="recetas.html">Recetas en vídeo</a></li>
-                    <li><a href="gracias.html">Gracias (descarga de la guía)</a></li>
-                </ul>
-            </li>
-            <li>
-                <span class="sitemap-section">Artículos</span>
-                <ul>
-                    <li><a href="Articulos/como-respirar-para-dormir-mejor.html">Cómo respirar para dormir mejor</a></li>
-                    <li><a href="Articulos/respiracion-para-ataques-de-ansiedad.html">Respiración para ataques de ansiedad</a></li>
-                    <li><a href="Articulos/respiracion-diafragmatica-vs-toracica.html">Respiración diafragmática vs. torácica</a></li>
-                </ul>
-            </li>
-            <li>
-                <span class="sitemap-section">Entradas de blog · Libros de Ciencia</span>
-                <ul>
-                    <li><a href="Entradas_blog/entrada_blog_tu_cuerpo.html">Tu cuerpo tiene las respuestas — Giulia Enders</a></li>
-                    <li><a href="Entradas_blog/entrada_blog_neurociencia_cuerpo.html">Neurociencia del cuerpo — Nazaret Castellanos</a></li>
-                </ul>
-            </li>
-            <li>
-                <span class="sitemap-section">Entradas de blog · Libros de Experiencias</span>
-                <ul>
-                    <li><a href="Entradas_blog/entrada_blog_tao_para_vivir.html">Tao para vivir — García, García y Liu Zheng</a></li>
-                    <li><a href="Entradas_blog/entrada_blog_proceso_presencia.html">El proceso de la presencia — Michael Brown</a></li>
-                </ul>
-            </li>
-            <li>
-                <span class="sitemap-section">Entradas de blog · Nutrición</span>
-                <ul>
-                    <li><a href="Entradas_blog/entrada_blog_omega_3.html">Por qué he elegido este omega-3</a></li>
-                    <li><a href="Entradas_blog/entrada_blog_vitamina_c.html">Vitamina C</a></li>
-                    <li><a href="Entradas_blog/entrada_blog_psyllium.html">Psyllium</a></li>
-                    <li><a href="Entradas_blog/entrada_blog_selenio.html">Selenio</a></li>
-                    <li><a href="Entradas_blog/entrada_blog_zinc.html">Zinc (Bisglicinato)</a></li>
-                    <li><a href="Entradas_blog/entrada_blog_potasio.html">Potasio (Citrato)</a></li>
-                    <li><a href="Entradas_blog/entrada_blog_vitamina_d.html">Vitamina D3 / K2</a></li>
-                    <li><a href="Entradas_blog/entrada_blog_magnesio.html">Magnesio (Citrato)</a></li>
-                </ul>
-            </li>
-            <li>
-                <span class="sitemap-section">Versión en inglés</span>
-                <ul>
-                    <li><a href="en/index.html">Home</a></li>
-                    <li><a href="en/science.html">Science</a></li>
-                    <li><a href="en/experiences.html">Experiences</a></li>
-                    <li><a href="en/nutrition.html">Nutrition</a></li>
-                    <li><a href="en/contact.html">Contact</a></li>
-                    <li><a href="en/recipes.html">Video recipes</a></li>
-                </ul>
-            </li>
-            <li>
-                <span class="sitemap-section">Legal</span>
-                <ul>
-                    <li><a href="aviso-legal.html">Aviso legal</a></li>
-                    <li><a href="privacidad.html">Política de privacidad</a></li>
-                    <li><a href="cookies.html">Política de cookies</a></li>
-                </ul>
-            </li>
-        </ul>
-    </div>
-    <div id="footer"></div>
-    <script src="footer.js"></script>
-</div>
-<script src="nav.js"></script>
+
+        <div class="sitemap-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem;">
+          
+          <!-- Bloque 1: Páginas Principales -->
+          <div class="card" style="padding: 1.75rem;">
+            <h3 style="color: var(--primary); margin-bottom: 1rem; border-bottom: 2px solid var(--border); padding-bottom: 0.5rem;">
+              📍 Páginas Principales
+            </h3>
+            <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.6rem;">
+              <li><a href="index.html#inicio" style="color: var(--text-main); font-weight: 600; text-decoration: none;">Inicio / Portada</a></li>
+              <li><a href="index.html#sobre-mi" style="color: var(--text-muted); text-decoration: none;">Sobre mí (De Ingeniero a Facilitador)</a></li>
+              <li><a href="index.html#metodo" style="color: var(--text-muted); text-decoration: none;">El Método (60 minutos)</a></li>
+              <li><a href="index.html#servicios" style="color: var(--text-muted); text-decoration: none;">Programas & Soluciones</a></li>
+              <li><a href="index.html#guia" style="color: var(--text-muted); text-decoration: none;">Guía Gratuita de 5 Minutos</a></li>
+            </ul>
+          </div>
+
+          <!-- Bloque 2: Programas y Ciencia -->
+          <div class="card" style="padding: 1.75rem;">
+            <h3 style="color: var(--secondary); margin-bottom: 1rem; border-bottom: 2px solid var(--border); padding-bottom: 0.5rem;">
+              🧬 Ciencia y Experiencias
+            </h3>
+            <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.6rem;">
+              <li><a href="ciencia.html" style="color: var(--text-main); font-weight: 600; text-decoration: none;">Evidencia Científica</a></li>
+              <li style="font-size: 0.85rem; color: var(--text-muted); margin-left: 0.75rem;">• Nervio Vago y Sistema Parasimpático</li>
+              <li style="font-size: 0.85rem; color: var(--text-muted); margin-left: 0.75rem;">• Efecto Bohr y Bioquímica del CO₂</li>
+              <li style="font-size: 0.85rem; color: var(--text-muted); margin-left: 0.75rem;">• Variabilidad Cardíaca (HRV)</li>
+              <li><a href="experiencias.html" style="color: var(--text-main); font-weight: 600; text-decoration: none;">Experiencias & Testimonios</a></li>
+            </ul>
+          </div>
+
+          <!-- Bloque 3: Soluciones y Publicación -->
+          <div class="card" style="padding: 1.75rem;">
+            <h3 style="color: var(--primary); margin-bottom: 1rem; border-bottom: 2px solid var(--border); padding-bottom: 0.5rem;">
+              🎯 Servicios & Libro
+            </h3>
+            <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.6rem;">
+              <li><a href="contacto.html" style="color: var(--text-main); font-weight: 600; text-decoration: none;">Contacto & Solicitudes</a></li>
+              <li style="font-size: 0.85rem; color: var(--text-muted); margin-left: 0.75rem;">• Programa "Respira y vuelve a ti" (Particulares)</li>
+              <li style="font-size: 0.85rem; color: var(--text-muted); margin-left: 0.75rem;">• Propuesta Estrés y Fatiga (Empresas / ENAIRE)</li>
+              <li><a href="https://amzn.to/4cwTSJZ" target="_blank" rel="noopener" style="color: var(--text-muted); text-decoration: none;">Libro "Hackers de la Respiración" (Amazon) ↗</a></li>
+            </ul>
+          </div>
+
+          <!-- Bloque 4: Recursos y Legalidad -->
+          <div class="card" style="padding: 1.75rem;">
+            <h3 style="color: var(--text-main); margin-bottom: 1rem; border-bottom: 2px solid var(--border); padding-bottom: 0.5rem;">
+              ⚖️ Recursos & Avisos Legales
+            </h3>
+            <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.6rem;">
+              <li><a href="gracias.html" style="color: var(--text-muted); text-decoration: none;">Página de Confirmación de Guía</a></li>
+              <li><a href="aviso-legal.html" style="color: var(--text-muted); text-decoration: none;">Aviso Legal</a></li>
+              <li><a href="privacidad.html" style="color: var(--text-muted); text-decoration: none;">Política de Privacidad</a></li>
+              <li><a href="cookies.html" style="color: var(--text-muted); text-decoration: none;">Política de Cookies</a></li>
+              <li><a href="mapa.html" style="color: var(--primary); font-weight: 600; text-decoration: none;">Mapa del Sitio (Actual)</a></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Pie de página dinámico -->
+  <div id="footer-container"></div>
+
+  <script src="nav.js"></script>
+  <script src="footer.js"></script>
 </body>
 </html>
